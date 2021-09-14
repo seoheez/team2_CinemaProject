@@ -18,13 +18,13 @@
       </ImageView>
       <TextField layoutX="289.0" layoutY="239.0" />
       <PasswordField layoutX="289.0" layoutY="291.0" />
-      <Button layoutX="471.0" layoutY="258.0" mnemonicParsing="false" prefHeight="40.0" prefWidth="83.0" text="로그인">
+      <Button layoutX="471.0" layoutY="258.0" mnemonicParsing="false" prefHeight="40.0" prefWidth="83.0" onAction="#btnOk" text="로그인">
          <font>
             <Font size="16.0" />
          </font>
       </Button>
-      <Button layoutX="289.0" layoutY="344.0" mnemonicParsing="false" prefHeight="22.0" prefWidth="83.0" text="회원가입" />
-      <Button layoutX="411.0" layoutY="344.0" mnemonicParsing="false" text="취소" />
+      <Button layoutX="289.0" layoutY="344.0" mnemonicParsing="false" prefHeight="22.0" prefWidth="83.0" onAction="#btnMemberShip" text="회원가입" />
+      <Button layoutX="411.0" layoutY="344.0" mnemonicParsing="false" onAction="#btnCancel" text="취소" />
       <Label layoutX="169.0" layoutY="238.0" prefHeight="22.0" prefWidth="31.0" text="ID" textFill="WHITE">
          <font>
             <Font size="18.0" />
