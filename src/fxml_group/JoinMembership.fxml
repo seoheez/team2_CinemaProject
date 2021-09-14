@@ -10,7 +10,7 @@
 
 <AnchorPane prefHeight="270.0" prefWidth="318.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/16">
    <children>
-      <Label layoutX="11.0" layoutY="20.0" prefHeight="35.0" prefWidth="99.0" text="회원가입">
+      <Label layoutX="20.0" layoutY="23.0" prefHeight="30.0" prefWidth="94.0" text="회원가입">
          <font>
             <Font name="System Bold" size="23.0" />
          </font>
