@@ -11,10 +11,10 @@
    <children>
       <ImageView fitHeight="507.0" fitWidth="847.0" pickOnBounds="true" preserveRatio="true">
          <image>
-            <Image url="@img/ticket.jpg" />
+            <Image url="@../img/ticket.jpg" />
          </image>
          <effect>
-            <Lighting diffuseConstant="0.7">
+            <Lighting diffuseConstant="0.63">
                <bumpInput>
                   <BoxBlur />
                </bumpInput>
@@ -26,7 +26,7 @@
       </ImageView>
       <ImageView fitHeight="232.0" fitWidth="160.0" layoutX="38.0" layoutY="39.0" pickOnBounds="true" preserveRatio="true">
          <image>
-            <Image url="@img/movie1.jpg" />
+            <Image url="@../img/movie1.jpg" />
          </image>
       </ImageView>
    </children>
