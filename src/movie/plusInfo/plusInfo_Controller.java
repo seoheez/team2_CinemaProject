@@ -10,6 +10,7 @@ import javafx.fxml.FXMLLoader;
 import javafx.fxml.Initializable;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
+import javafx.scene.control.Label;
 import javafx.scene.control.ListView;
 import javafx.scene.control.TextField;
 import javafx.scene.image.Image;
@@ -22,13 +23,14 @@ public class plusInfo_Controller implements Initializable{
 	ImageView fxImageView;
 	ObservableList<String> movieTitle;
 	ArrayList<String> url;
-	//ObservableList<Phone> phoneURL;
 	public void setRoot(Parent root) {
 		this.root = root;
 		fxListView = (ListView)root.lookup("#fxListView");
 		fxImageView = (ImageView)root.lookup("#fxImageView");
 		setListView();
 	}
+	
+	
 	public void setListView() {
 		setList();
 		fxListView.getSelectionModel().selectedIndexProperty().addListener((observable, oldValue, newValue)->{
@@ -39,7 +41,6 @@ public class plusInfo_Controller implements Initializable{
 			System.out.println("/img/movie/"+ url.get( (int)newValue));
 			System.out.println(url.size());
 			fxImageView.setImage(new Image("/img/movie/"+ url.get( (int)newValue )) );
-			System.out.println("4555");
 		});
 	}
 	public void setList() {
@@ -53,7 +54,23 @@ public class plusInfo_Controller implements Initializable{
 	}
 	fxListView.setItems(movieTitle);
 }
-
+	public void detailView() {
+		try {
+			Stage primaryStage = new Stage();
+			FXMLLoader loader = 
+					new FXMLLoader(getClass().getResource("detailInfo.fxml"));
+			Parent root = loader.load();
+			Scene scene = new Scene(root);
+			plusInfo_Controller ctl = loader.getController();
+			ctl.setRoot(root);
+			
+			primaryStage.setScene(scene);
+			primaryStage.show();
+		} catch (Exception e) {
+			e.printStackTrace();
+		}	
+	}
+	
 @Override
 public void initialize(URL arg0, ResourceBundle arg1) {	}
 }

@@ -47,7 +47,6 @@ public class Controller implements Initializable{
 			primaryStage.show();
 		} catch (Exception e) {
 			e.printStackTrace();
-			// TODO: handle exception
 		}	
 	}
 	public void btnCancel() {
