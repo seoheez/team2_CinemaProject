@@ -13,7 +13,7 @@ public class LoginServiceImpl implements LoginService{
 	}
 	@Override
 	public void loginCheck() {
-		System.out.println("·Î±×ÀÎ");
+		System.out.println("ë¡œê·¸ì¸ ì„±ê³µ");
 		TextField tf = (TextField)root.lookup("#fxId");
 		PasswordField pf = (PasswordField)root.lookup("#fxPwd");
 		System.out.println(tf.getText());
@@ -21,7 +21,7 @@ public class LoginServiceImpl implements LoginService{
 	}
 	@Override
 	public void loginClose() {
-		System.out.println("È­¸éÀ» ´İ°Ú½À´Ï´Ù~");
+		System.out.println("í™”ë©´ì„ ë‹«ê² ìŠµë‹ˆë‹¤");
 		CommonService cs = new CommonServiceImpl();
 		cs.setRoot(root);
 		cs.windowClose();
