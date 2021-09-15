@@ -6,12 +6,14 @@ import java.util.ResourceBundle;
 
 import javafx.collections.FXCollections;
 import javafx.collections.ObservableList;
+import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
 import javafx.fxml.Initializable;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
 import javafx.scene.control.Label;
 import javafx.scene.control.ListView;
+import javafx.scene.control.TextArea;
 import javafx.scene.control.TextField;
 import javafx.scene.image.Image;
 import javafx.scene.image.ImageView;
@@ -55,22 +57,23 @@ public class plusInfo_Controller implements Initializable{
 	fxListView.setItems(movieTitle);
 }
 	public void detailView() {
-		try {
-			Stage primaryStage = new Stage();
-			FXMLLoader loader = 
-					new FXMLLoader(getClass().getResource("detailInfo.fxml"));
-			Parent root = loader.load();
-			Scene scene = new Scene(root);
-			plusInfo_Controller ctl = loader.getController();
-			ctl.setRoot(root);
-			
-			primaryStage.setScene(scene);
-			primaryStage.show();
-		} catch (Exception e) {
-			e.printStackTrace();
-		}	
-	}
-	
+			try {
+				Stage primaryStage = new Stage();
+				FXMLLoader loader = 
+						new FXMLLoader(getClass().getResource("detailInfo.fxml"));
+				Parent Root = loader.load();
+				Scene scene = new Scene(Root);
+				//plusInfo_Controller ctl = loader.getController();
+				//ctl.setRoot(Root);
+				Stage stage = (Stage)root.getScene().getWindow();
+				stage.close();
+				primaryStage.setScene(scene);
+				primaryStage.show();
+			} catch (Exception e) {
+				e.printStackTrace();
+			}	
+		}
+		
 @Override
 public void initialize(URL arg0, ResourceBundle arg1) {	}
 }

@@ -47,7 +47,9 @@ public class Controller implements Initializable{
 			primaryStage.show();
 		} catch (Exception e) {
 			e.printStackTrace();
-		}	
+		}
+		Stage stage = (Stage)root.getScene().getWindow();
+		stage.close();
 	}
 	public void btnCancel() {
 		//System.out.println("can");
