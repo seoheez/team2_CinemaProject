@@ -29,32 +29,32 @@
       </ImageView>
       <ImageView fitHeight="176.0" fitWidth="145.0" layoutX="80.0" layoutY="29.0" pickOnBounds="true" preserveRatio="true">
          <image>
-            <Image url="@../img/movie1.jpg" />
+            <Image url="@../img/movie/movie1.jpg" />
          </image>
       </ImageView>
       <ImageView fitHeight="176.0" fitWidth="145.0" layoutX="333.0" layoutY="29.0" pickOnBounds="true" preserveRatio="true">
          <image>
-            <Image url="@../img/movie2.jpg" />
+            <Image url="@../img/movie/movie2.jpg" />
          </image>
       </ImageView>
       <ImageView fitHeight="176.0" fitWidth="145.0" layoutX="574.0" layoutY="29.0" pickOnBounds="true" preserveRatio="true">
          <image>
-            <Image url="@../img/movie3.jpg" />
+            <Image url="@../img/movie/movie3.jpg" />
          </image>
       </ImageView>
       <ImageView fitHeight="176.0" fitWidth="145.0" layoutX="79.0" layoutY="267.0" pickOnBounds="true" preserveRatio="true">
          <image>
-            <Image url="@../img/movie4.jpg" />
+            <Image url="@../img/movie/movie4.jpg" />
          </image>
       </ImageView>
       <ImageView fitHeight="176.0" fitWidth="145.0" layoutX="329.0" layoutY="267.0" pickOnBounds="true" preserveRatio="true">
          <image>
-            <Image url="@../img/movie5.jpg" />
+            <Image url="@../img/movie/movie5.jpg" />
          </image>
       </ImageView>
       <ImageView fitHeight="176.0" fitWidth="145.0" layoutX="575.0" layoutY="267.0" pickOnBounds="true" preserveRatio="true">
          <image>
-            <Image url="@../img/movie6.jpg" />
+            <Image url="@../img/movie/movie6.jpg" />
          </image>
       </ImageView>
       <Label layoutX="33.0" layoutY="14.0" prefHeight="29.0" prefWidth="67.0" text="1" textFill="WHITE">

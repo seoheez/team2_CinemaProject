@@ -5,15 +5,15 @@ import javafx.beans.property.SimpleStringProperty;
 public class movie {
 	private SimpleStringProperty movieTitle;
 	private SimpleStringProperty image;
-	public movie(String smartPhone, String image) {
-		this.movieTitle = new SimpleStringProperty(smartPhone);
+	public movie(String movieTitle, String image) {
+		this.movieTitle = new SimpleStringProperty(movieTitle);
 		this.image = new SimpleStringProperty(image);
 	}
-	public String getSmartPhone() {
+	public String getmovieTitle() {
 		return movieTitle.get();
 	}
-	public void setSmartPhone(String smartPhone) {
-		this.movieTitle = new SimpleStringProperty(smartPhone);
+	public void setmovieTitle(String movieTitle) {
+		this.movieTitle = new SimpleStringProperty(movieTitle);
 	}
 	public String getImage() {
 		return image.get();

@@ -36,20 +36,20 @@ public class plusInfo_Controller implements Initializable{
 			System.out.println("oldValue(이전값) : "+oldValue);
 			System.out.println("newValue(현재값) : "+newValue);
 			System.out.println(movieTitle.get( (int)newValue ));
-			fxImageView.setImage(new Image("/img/movie"+ url.get( (int)newValue )) );
+			System.out.println("/img/movie/"+ url.get( (int)newValue));
+			System.out.println(url.size());
+			fxImageView.setImage(new Image("/img/movie/"+ url.get( (int)newValue )) );
+			System.out.println("4555");
 		});
 	}
 	public void setList() {
 		movieTitle = FXCollections.observableArrayList();
 		url = new ArrayList<String>();
-		for(int i=1 ; i<2 ; i++) {
-		movieTitle.add("샹치");
-		movieTitle.add("인질");
-		movieTitle.add("포켓몬스터 :정글의 아이,코코");
-		movieTitle.add("모가디슈");
-		movieTitle.add("컨파우더 밀크셰이크");
-		movieTitle.add("맨인더다크2");
-		url.add("영화"+".png");
+		String[] title = {"샹치","인질","포켓몬스터 :정글의 아이,코코","모가디슈","컨파우더 밀크셰이크","맨인더다크2"};
+		for(int i=0 ; i<title.length; i++) {
+		movieTitle.add(title[i]);
+	
+		url.add("movie"+ i + ".jpg");
 	}
 	fxListView.setItems(movieTitle);
 }
