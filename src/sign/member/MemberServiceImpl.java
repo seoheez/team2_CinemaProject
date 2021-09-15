@@ -19,11 +19,11 @@ public class MemberServiceImpl implements MemberService{
 	public void addComboBox() {
 		ComboBox<String> cmbAge = (ComboBox<String>)root.lookup("#cmbAge");
 		if(cmbAge != null) {
-			cmbAge.getItems().addAll("20¹Ì¸¸", "20´ë", "30´ë","40´ë ÀÌ»ó");
+			cmbAge.getItems().addAll("20ëŒ€ ë¯¸ë§Œ", "20ëŒ€", "30ëŒ€","40ëŒ€ ì´ìƒ");
 		}
 	}
 	public void memberCancle() {
-		System.out.println("Ãë¼Ò Å¬¸¯");
+		System.out.println("ì·¨ì†Œ í´ë¦­");
 		CommonService cs = new CommonServiceImpl();
 		cs.setRoot(root);
 		cs.windowClose();
@@ -32,11 +32,11 @@ public class MemberServiceImpl implements MemberService{
 		TextField tx = (TextField)root.lookup("#fxName");
 		TextField pf = (TextField)root.lookup("#fxPw");
 		if(tx.getText().isEmpty()) {
-			alertMethod("ÀÌ¸§Àº ÇÊ¼ö Ç×¸ñÀÔ´Ï´Ù");
+			alertMethod("ì´ë¦„ì€ í•„ìˆ˜ í•­ëª©ì…ë‹ˆë‹¤");
 			tx.requestFocus();
 		}
 		else if(pf.getText().isEmpty()) {
-			alertMethod("ºñ¹Ğ¹øÈ£ ÇÊ¼ö Ç×¸ñÀÔ´Ï´Ù");
+			alertMethod("ë¹„ë°€ë²ˆí˜¸ í•„ìˆ˜ í•­ëª©ì…ë‹ˆë‹¤");
 		}
 	}
 	public void alertMethod(String msg) {
@@ -48,7 +48,7 @@ public class MemberServiceImpl implements MemberService{
 		ComboBox<String> cmbAge = (ComboBox<String>)root.lookup("#cmbAge");
 		String age = null;
 		if(cmbAge.getValue() == null) {
-			System.out.println("ÄŞº¸¹Ú½º¸¦ ¼±ÅÃÇØÁÖ¼¼¿ä");
+			System.out.println("ì½¤ë³´ë°•ìŠ¤ë¥¼ ì„ íƒí•´ ì£¼ì„¸ìš”");
 		}else {
 			age = cmbAge.getValue().toString();
 		}

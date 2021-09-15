@@ -27,11 +27,11 @@ public class MemberController implements Initializable{
 		ms = new MemberServiceImpl();
 	}
 	public void membershipProc() {
-		System.out.println("È¸¿ø°¡ÀÔ Å¬¸¯");
+		System.out.println("íšŒì›ê°€ì… í´ë¦­");
 		ms.membershipProc();
 	}
 	public void memberCancle() {
-		System.out.println("Ãë¼Ò Å¬¸¯");
+		System.out.println("ì·¨ì†Œ í´ë¦­");
 		ms.memberCancle();
 	}
 }

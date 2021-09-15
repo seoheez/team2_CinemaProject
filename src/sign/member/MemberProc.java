@@ -7,7 +7,7 @@ import javafx.stage.Stage;
 
 public class MemberProc {
 	public void memberShip() {
-		System.out.println("È¸¿øÀ¸·Î ÀÌµ¿");
+		System.out.println("íšŒì›ìœ¼ë¡œ ì´ë™");
 		try {
 			Stage primaryStage = new Stage();
 			FXMLLoader loader = 
