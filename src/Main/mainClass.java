@@ -10,6 +10,7 @@ import javafx.scene.image.ImageView;
 import javafx.stage.Stage;
 
 public class mainClass extends Application {
+	public static int s = 0;
 	@Override
 	public void start(Stage primaryStage) throws IOException {
 		FXMLLoader loader = 
