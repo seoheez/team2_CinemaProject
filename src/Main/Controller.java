@@ -18,10 +18,10 @@ import sign.member.MemberProc;
 
 public class Controller implements Initializable{
 	@FXML
-
-	ImageView myImageView;
+	ImageView myImageView; 
 	Image myImage = new Image(getClass().getResourceAsStream("/img/movie.jpg"));
 
+	
 	Parent root;
 	MemberProc mp;
 	LoginService ls;
@@ -32,12 +32,11 @@ public class Controller implements Initializable{
 	}
 
 	public void btnOk() {
-		System.out.println("ok");
 		//ls.loginCheck();
 		try {
 			Stage primaryStage = new Stage();
 			FXMLLoader loader = 
-					new FXMLLoader(getClass().getResource("/movie/plusInfo/plusInfo.fxml"));
+					new FXMLLoader(getClass().getResource("/movie/plusInfo/plusInfo.fxml")); 
 			Parent root = loader.load();
 			Scene scene = new Scene(root);
 			plusInfo_Controller ctl = loader.getController();
@@ -64,9 +63,9 @@ public class Controller implements Initializable{
 	public void initialize(URL arg0, ResourceBundle arg1) {
 		mp = new MemberProc();
 		ls = new LoginServiceImpl();
-
 	}
 	public void displayImage() {
+		System.out.println("111");
 		myImageView.setImage(myImage);
 	}
 }

@@ -56,11 +56,11 @@ public class plusInfo_Controller implements Initializable{
 	}
 	fxListView.setItems(movieTitle);
 }
-	public void detailView() {
+	public void reserveBtn() {
 			try {
 				Stage primaryStage = new Stage();
 				FXMLLoader loader = 
-						new FXMLLoader(getClass().getResource("detailInfo.fxml"));
+						new FXMLLoader(getClass().getResource("MovieInfo.fxml"));
 				Parent Root = loader.load();
 				Scene scene = new Scene(Root);
 				//plusInfo_Controller ctl = loader.getController();
@@ -73,7 +73,27 @@ public class plusInfo_Controller implements Initializable{
 				e.printStackTrace();
 			}	
 		}
+	public void detailView() {
+		try {
+			Stage primaryStage = new Stage();
+			FXMLLoader loader = 
+					new FXMLLoader(getClass().getResource("detailInfo.fxml"));
+			Parent Root = loader.load();
+			Scene scene = new Scene(Root);
+			//plusInfo_Controller ctl = loader.getController();
+			//ctl.setRoot(Root);
+			//Stage stage = (Stage)root.getScene().getWindow();
+			//stage.close();
+			primaryStage.setScene(scene);
+			primaryStage.show();
+			
+		} catch (Exception e) {
+			e.printStackTrace();
+		}
 		
+		
+	}
+	
 @Override
 public void initialize(URL arg0, ResourceBundle arg1) {	}
 }

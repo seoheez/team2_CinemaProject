@@ -22,7 +22,7 @@
          </font>
       </Label>
       <ImageView fx:id="fxImageView" fitHeight="418.0" fitWidth="300.0" layoutX="297.0" layoutY="44.0" pickOnBounds="true" preserveRatio="true" />
-      <Button layoutX="642.0" layoutY="451.0" mnemonicParsing="false" onAction="#detailView" prefHeight="42.0" prefWidth="105.0" style="-fx-background-color: #bf8c14;" text="상세보기" textFill="#fcf9f9">
+      <Button layoutX="642.0" layoutY="451.0" mnemonicParsing="false" onAction="#reserveBtn" prefHeight="42.0" prefWidth="105.0" style="-fx-background-color: #bf8c14;" text="예매하기" textFill="#fcf9f9">
          <font>
             <Font size="19.0" />
          </font>
