@@ -73,6 +73,7 @@ public class plusInfo_Controller implements Initializable{
 				e.printStackTrace();
 			}	
 		}
+	/*
 	public void detailView() {
 		try {
 			Stage primaryStage = new Stage();
@@ -93,7 +94,7 @@ public class plusInfo_Controller implements Initializable{
 		
 		
 	}
-	
+	*/
 @Override
 public void initialize(URL arg0, ResourceBundle arg1) {	}
 }
