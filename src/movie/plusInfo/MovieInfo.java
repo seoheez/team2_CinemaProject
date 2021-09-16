@@ -16,7 +16,7 @@ public class MovieInfo extends Application {
 				new FXMLLoader(getClass().getResource("MovieInfo.fxml"));
 		Parent root = loader.load();
 		Scene scene = new Scene(root);
-		Controller ctl = loader.getController();
+		MovieInfoController ctl = loader.getController();
 		ctl.setRoot(root);
 		
 		primaryStage.setScene(scene);

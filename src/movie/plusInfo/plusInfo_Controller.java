@@ -56,6 +56,7 @@ public class plusInfo_Controller implements Initializable{
 	}
 	fxListView.setItems(movieTitle);
 }
+	/*
 	public void reserveBtn() {
 			try {
 				Stage primaryStage = new Stage();
@@ -73,6 +74,8 @@ public class plusInfo_Controller implements Initializable{
 				e.printStackTrace();
 			}	
 		}
+		*/
+	/*
 	public void detailView() {
 		try {
 			Stage primaryStage = new Stage();
@@ -90,10 +93,8 @@ public class plusInfo_Controller implements Initializable{
 		} catch (Exception e) {
 			e.printStackTrace();
 		}
-		
-		
 	}
-	
+	*/
 @Override
 public void initialize(URL arg0, ResourceBundle arg1) {	}
 }

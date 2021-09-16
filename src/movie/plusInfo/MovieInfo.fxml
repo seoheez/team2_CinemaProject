@@ -87,7 +87,7 @@
             <Font size="64.0" />
          </font>
       </Label>
-      <Button fx:id="detailZero" layoutX="103.0" layoutY="211.0" mnemonicParsing="false" onAction="#detailView0" style="-fx-background-color: black;" text="상세보기" textFill="#faf7f7">
+      <Button fx:id="detailZero" layoutX="103.0" layoutY="211.0" mnemonicParsing="false" onAction="#detailViewZero" style="-fx-background-color: black;" text="상세보기" textFill="#faf7f7">
          <font>
             <Font size="14.0" />
          </font>

@@ -4,19 +4,17 @@ import java.net.URL;
 import java.util.ResourceBundle;
 
 import javafx.collections.FXCollections;
-import javafx.fxml.FXMLLoader;
 import javafx.fxml.Initializable;
 import javafx.scene.Parent;
-import javafx.scene.Scene;
 import javafx.scene.chart.BarChart;
 import javafx.scene.chart.PieChart;
 import javafx.scene.chart.XYChart;
-import javafx.stage.Stage;
 
 public class datail_Info_Controller0 implements Initializable{
 	Parent root;
 	PieChart pieChart;
 	BarChart barChart;
+
 	public void setRoot(Parent root) {
 		this.root = root;
 		pieChart = (PieChart)root.lookup("#pieChart");
@@ -43,9 +41,6 @@ public void chart() {
 		
 		barChart.getData().add(series1);
 	}
-	
-	
-	
 	@Override
 	public void initialize(URL arg0, ResourceBundle arg1) {
 		

@@ -12,7 +12,6 @@ import javafx.scene.image.Image;
 import javafx.scene.image.ImageView;
 import javafx.stage.Stage;
 import movie.plusInfo.MovieInfoController;
-import movie.plusInfo.plusInfo_Controller;
 import sign.loginService.LoginService;
 import sign.loginService.LoginServiceImpl;
 import sign.member.MemberProc;
@@ -42,7 +41,6 @@ public class Controller implements Initializable{
 			Scene scene = new Scene(root);
 			MovieInfoController ctl = loader.getController();
 			ctl.setRoot(root);
-			
 			primaryStage.setScene(scene);
 			primaryStage.show();
 		} catch (Exception e) {
