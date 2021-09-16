@@ -10,7 +10,7 @@
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.text.Font?>
 
-<AnchorPane prefHeight="495.0" prefWidth="756.0" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="movie.plusInfo.plusInfo_Controller">
+<AnchorPane prefHeight="495.0" prefWidth="756.0" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="movie.plusInfo.MovieInfoController">
    <children>
       <ImageView fx:id="background" fitHeight="521.0" fitWidth="772.0" pickOnBounds="true" preserveRatio="true">
          <image>
@@ -87,32 +87,32 @@
             <Font size="64.0" />
          </font>
       </Label>
-      <Button fx:id="detailZero" layoutX="103.0" layoutY="211.0" mnemonicParsing="false" onAction="#detailView" style="-fx-background-color: black;" text="상세보기" textFill="#faf7f7">
+      <Button fx:id="detailZero" layoutX="103.0" layoutY="211.0" mnemonicParsing="false" onAction="#detailView0" style="-fx-background-color: black;" text="상세보기" textFill="#faf7f7">
          <font>
             <Font size="14.0" />
          </font>
       </Button>
-      <Button layoutX="355.0" layoutY="211.0" mnemonicParsing="false" style="-fx-background-color: black;" text="상세보기" textFill="#faf7f7">
+      <Button layoutX="355.0" layoutY="211.0" mnemonicParsing="false" onAction="#detailView1" style="-fx-background-color: black;" text="상세보기" textFill="#faf7f7">
          <font>
             <Font size="14.0" />
          </font>
       </Button>
-      <Button layoutX="598.0" layoutY="211.0" mnemonicParsing="false" style="-fx-background-color: black;" text="상세보기" textFill="#faf7f7">
+      <Button layoutX="598.0" layoutY="211.0" mnemonicParsing="false" onAction="#detailView2" style="-fx-background-color: black;" text="상세보기" textFill="#faf7f7">
          <font>
             <Font size="14.0" />
          </font>
       </Button>
-      <Button layoutX="598.0" layoutY="453.0" mnemonicParsing="false" style="-fx-background-color: black;" text="상세보기" textFill="#faf7f7">
+      <Button layoutX="598.0" layoutY="453.0" mnemonicParsing="false" onAction="#detailView5" style="-fx-background-color: black;" text="상세보기" textFill="#faf7f7">
          <font>
             <Font size="14.0" />
          </font>
       </Button>
-      <Button layoutX="355.0" layoutY="453.0" mnemonicParsing="false" style="-fx-background-color: black;" text="상세보기" textFill="#faf7f7">
+      <Button layoutX="355.0" layoutY="453.0" mnemonicParsing="false" onAction="#detailView4" style="-fx-background-color: black;" text="상세보기" textFill="#faf7f7">
          <font>
             <Font size="14.0" />
          </font>
       </Button>
-      <Button layoutX="103.0" layoutY="453.0" mnemonicParsing="false" style="-fx-background-color: black;" text="상세보기" textFill="#faf7f7">
+      <Button layoutX="103.0" layoutY="453.0" mnemonicParsing="false" onAction="#detailView3" style="-fx-background-color: black;" text="상세보기" textFill="#faf7f7">
          <font>
             <Font size="14.0" />
          </font>
