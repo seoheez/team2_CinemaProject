@@ -25,7 +25,9 @@ public class datail_Info_Controller0 implements Initializable{
 		barChart = (BarChart)root.lookup("#barChart");
 		chart();
 		Label a = (Label)root.lookup("#story");
+		Label b = (Label)root.lookup("#outline");
 		a.setText(s);
+		b.setText(s);
 	}
 	
 public void chart() {

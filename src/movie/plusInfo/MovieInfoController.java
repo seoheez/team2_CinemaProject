@@ -19,8 +19,9 @@ public class MovieInfoController implements Initializable{
 	public void setRoot(Parent root) {
 		this.root = root;
 	}
-	public void detailView(ActionEvent view) {
+	public void detailView(ActionEvent view ) {
 		System.out.println(((Button)(view.getSource())).getId());
+		
 		ArrayList<String> arr = new ArrayList<String>();
 		arr.add("초인적인 능력을 가진 '텐 링즈'의 힘으로 수세기  동안 어둠의 세상을 지배해 온 '웬우' '샹치'는 아버지 '웬우' 밑에서 암살자로 훈련을 받지만 이를 거부하고 평범한 삶을 선택하는데...");
 		arr.add("평소와 똑같던 어느 새벽, 서울 한복판에서 증거도, 목격자도 없이 대한민국 톱배우 '황정민'이 납치된다. 한 치 앞을 알 수 없는 상황 속 살기 위한 극한의 탈주가 시작되는데… ");
@@ -41,9 +42,18 @@ public class MovieInfoController implements Initializable{
 		Zero(arr.get(btn.indexOf(((Button)(view.getSource())).getId())));
 		
 		
+		System.out.println(((Button)(view.getSource())).getId());
+		ArrayList<String> outline = new ArrayList<String>();
+		outline.add("액션");
+		outline.add("액션");
+		outline.add("애니메이션");
+		outline.add("액션");
+		outline.add("액션");
+		outline.add("범죄");
+//		System.out.println(btn.indexOf(((Button)(view.getSource())).getId()));
+//		Zero(outline.get(btn.indexOf(((Button)(view.getSource())).getId())));
 		
 	}
-
 	public void Zero(String s){
 		try {
 			Stage primaryStage = new Stage();
@@ -63,7 +73,7 @@ public class MovieInfoController implements Initializable{
 			e.printStackTrace();
 		}
 	}
-
+	
 
 	public void detailView1(){
 		try {
