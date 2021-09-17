@@ -12,7 +12,7 @@ public class plusInfo extends Application {
 	@Override
 	public void start(Stage primaryStage) throws IOException {
 		FXMLLoader loader = 
-				new FXMLLoader(getClass().getResource("../movie.plusInfo/plusInfo.fxml"));
+				new FXMLLoader(getClass().getResource("/movie.plusInfo/plusInfo.fxml"));
 		Parent root = loader.load();
 		Scene scene = new Scene(root);
 		plusInfo_Controller ctl = loader.getController();

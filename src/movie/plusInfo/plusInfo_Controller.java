@@ -78,7 +78,8 @@ public class plusInfo_Controller implements Initializable{
 			fxListView.setItems(movieTitle);
 		}
 }
-	public void reserveBtn() {System.out.println("494" + mainClass.s);
+	
+	public void reserveBtn() {
 			try {
 				Stage primaryStage = new Stage();
 				FXMLLoader loader = 
@@ -135,6 +136,9 @@ public class plusInfo_Controller implements Initializable{
 		barChart.getData().add(series1);
 	}
 	
+		
+
+
 @Override
 public void initialize(URL arg0, ResourceBundle arg1) {	}
 }
