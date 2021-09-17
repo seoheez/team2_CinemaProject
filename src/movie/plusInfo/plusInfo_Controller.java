@@ -75,26 +75,7 @@ public class plusInfo_Controller implements Initializable{
 			}	
 		}
 		*/
-	/*
-	public void detailView() {
-		try {
-			Stage primaryStage = new Stage();
-			FXMLLoader loader = 
-					new FXMLLoader(getClass().getResource("detailInfo.fxml"));
-			Parent Root = loader.load();
-			Scene scene = new Scene(Root);
-			//plusInfo_Controller ctl = loader.getController();
-			//ctl.setRoot(Root);
-			//Stage stage = (Stage)root.getScene().getWindow();
-			//stage.close();
-			primaryStage.setScene(scene);
-			primaryStage.show();
-			
-		} catch (Exception e) {
-			e.printStackTrace();
-		}
-	}
-	*/
+
 @Override
 public void initialize(URL arg0, ResourceBundle arg1) {	}
 }

@@ -1,14 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<?import javafx.scene.control.Button?>
-<?import javafx.scene.control.Label?>
 <?import javafx.scene.control.ListView?>
 <?import javafx.scene.image.Image?>
 <?import javafx.scene.image.ImageView?>
 <?import javafx.scene.layout.AnchorPane?>
-<?import javafx.scene.text.Font?>
 
-<AnchorPane prefHeight="495.0" prefWidth="759.0" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="movie.plusInfo.datail_Info_Controller0">
+<AnchorPane prefHeight="495.0" prefWidth="759.0" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="movie.plusInfo.plusInfo_Controller">
    <children>
       <ImageView fitHeight="508.0" fitWidth="759.0" pickOnBounds="true" preserveRatio="true">
          <image>
@@ -16,16 +13,6 @@
          </image>
       </ImageView>
       <ListView fx:id="fxListView" layoutX="30.0" layoutY="68.0" prefHeight="194.0" prefWidth="214.0" style="-fx-background-color: transparent;" />
-      <Label layoutX="30.0" layoutY="29.0" prefHeight="27.0" prefWidth="200.0" text="현재 상영 영화" textFill="#faf8f8">
-         <font>
-            <Font size="25.0" />
-         </font>
-      </Label>
-      <ImageView fx:id="fxImageView" fitHeight="418.0" fitWidth="300.0" layoutX="297.0" layoutY="44.0" pickOnBounds="true" preserveRatio="true" />
-      <Button layoutX="642.0" layoutY="451.0" mnemonicParsing="false" onAction="#reserveBtn" prefHeight="42.0" prefWidth="105.0" style="-fx-background-color: #bf8c14;" text="예매하기" textFill="#fcf9f9">
-         <font>
-            <Font size="19.0" />
-         </font>
-      </Button>
+      <ImageView fx:id="fxImageView" fitHeight="204.0" fitWidth="147.0" layoutX="297.0" layoutY="44.0" pickOnBounds="true" preserveRatio="true" />
    </children>
 </AnchorPane>

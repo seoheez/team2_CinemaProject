@@ -39,11 +39,11 @@ public class MovieInfoController implements Initializable{
 		try {
 			Stage primaryStage = new Stage();
 			FXMLLoader loader = 
-					new FXMLLoader(getClass().getResource("detailInfo1.fxml"));
+					new FXMLLoader(getClass().getResource("/movie/plusInfo/detailInfo1.fxml"));
 			Parent Root = loader.load();
 			Scene scene = new Scene(Root);
-			datail_Info_Controller0 ctl = loader.getController();
-			ctl.setRoot(Root);
+			datail_Info_Controller1 ctl1 = loader.getController();
+			ctl1.setRoot(Root);
 			//Stage stage = (Stage)root.getScene().getWindow();
 			//stage.close();
 			primaryStage.setScene(scene);
@@ -54,7 +54,7 @@ public class MovieInfoController implements Initializable{
 		}
 	}
 	
-	
+	/*
 	
 	public void detailView2(){
 		try {
@@ -137,9 +137,26 @@ public class MovieInfoController implements Initializable{
 			e.printStackTrace();
 		}
 	}
+	*/
 	
-	
-	
+	public void reserveBtn(){
+		try {
+			Stage primaryStage = new Stage();
+			FXMLLoader loader = 
+					new FXMLLoader(getClass().getResource("/movie/plusInfo/plusInfo.fxml"));
+			Parent Root = loader.load();
+			Scene scene = new Scene(Root);
+			plusInfo_Controller ctl = loader.getController();
+			ctl.setRoot(Root);
+			//Stage stage = (Stage)root.getScene().getWindow();
+			//stage.close();
+			primaryStage.setScene(scene);
+			primaryStage.show();
+			
+		} catch (Exception e) {
+			e.printStackTrace();
+		}
+	}
 	@Override
 	public void initialize(URL arg0, ResourceBundle arg1) {
 		// TODO Auto-generated method stub
