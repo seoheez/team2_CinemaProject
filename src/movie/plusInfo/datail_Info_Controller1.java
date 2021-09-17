@@ -32,11 +32,11 @@ public void chart() {
 		XYChart.Series series1 = new XYChart.Series();
 		series1.setName("연령별 예매 분포");
 		series1.setData(FXCollections.observableArrayList(
-					new XYChart.Data("10대",3.30),
-					new XYChart.Data("20대",33.30),
+					new XYChart.Data("10대",7.30),
+					new XYChart.Data("20대",27.30),
 					new XYChart.Data("30대",33.70),
-					new XYChart.Data("40대",20.30),
-					new XYChart.Data("50대",10.40)
+					new XYChart.Data("40대",15.30),
+					new XYChart.Data("50대",15.40)
 				));
 	
 		barChart.getData().add(series1);

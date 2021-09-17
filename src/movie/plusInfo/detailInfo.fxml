@@ -2,14 +2,11 @@
 
 <?import javafx.geometry.Insets?>
 <?import javafx.geometry.Rectangle2D?>
-<<<<<<< HEAD:src/movie/detail/detailInfo.fxml
 <?import javafx.scene.control.Button?>
-=======
 <?import javafx.scene.chart.BarChart?>
 <?import javafx.scene.chart.CategoryAxis?>
 <?import javafx.scene.chart.NumberAxis?>
 <?import javafx.scene.chart.PieChart?>
->>>>>>> b87906e868168c303303076a5f75a89282ee1318:src/movie/plusInfo/detailInfo.fxml
 <?import javafx.scene.control.Label?>
 <?import javafx.scene.effect.Light.Distant?>
 <?import javafx.scene.effect.Lighting?>
@@ -66,9 +63,7 @@
             <Rectangle2D height="300.0" minX="100.0" minY="100.0" width="600.0" />
          </viewport>
       </MediaView>
-<<<<<<< HEAD:src/movie/detail/detailInfo.fxml
       <Button fx:id="reserveBtn0" layoutX="651.0" layoutY="445.0" mnemonicParsing="false" onAction="#reserveBtn0" prefHeight="49.0" prefWidth="99.0" text="예매하기" />
-=======
       <PieChart fx:id="pieChart" layoutX="38.0" layoutY="326.0" prefHeight="171.0" prefWidth="213.0" />
       <BarChart fx:id="barChart" layoutX="277.0" layoutY="318.0" prefHeight="205.0" prefWidth="241.0">
         <xAxis>
@@ -78,6 +73,5 @@
           <NumberAxis side="LEFT" />
         </yAxis>
       </BarChart>
->>>>>>> b87906e868168c303303076a5f75a89282ee1318:src/movie/plusInfo/detailInfo.fxml
    </children>
 </AnchorPane>
