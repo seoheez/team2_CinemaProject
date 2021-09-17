@@ -4,6 +4,7 @@ import java.net.URL;
 import java.util.ArrayList;
 import java.util.ResourceBundle;
 
+import CheckPage.check_Controller;
 import javafx.collections.FXCollections;
 import javafx.collections.ObservableList;
 import javafx.fxml.FXML;
@@ -59,7 +60,21 @@ public class plusInfo_Controller implements Initializable{
 			fxListView.setItems(movieTitle);
 		}
 	
-		
+	public void InfoBtn() {
+		try {
+			Stage primaryStage = new Stage();
+			FXMLLoader loader = 
+					new FXMLLoader(getClass().getResource("/CheckPage/checkPage.fxml")); 
+			Parent root = loader.load();
+			Scene scene = new Scene(root);
+			check_Controller ctl = loader.getController();
+			ctl.setRoot(root);
+			primaryStage.setScene(scene);
+			primaryStage.show();
+		} catch (Exception e) {
+			e.printStackTrace();
+		}
+	}
 
 
 @Override

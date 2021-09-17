@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="363.0" prefWidth="547.0" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="CheckPage.check_Controller">
+   <children>
+      <Label layoutX="55.0" layoutY="96.0" prefHeight="81.0" prefWidth="181.0" text="예매 확인창 만들기">
+         <font>
+            <Font size="16.0" />
+         </font></Label>
+   </children>
+</AnchorPane>

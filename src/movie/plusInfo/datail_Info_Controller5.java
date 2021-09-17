@@ -11,21 +11,18 @@ import javafx.scene.Scene;
 import javafx.scene.chart.BarChart;
 import javafx.scene.chart.PieChart;
 import javafx.scene.chart.XYChart;
-import javafx.scene.control.Label;
 import javafx.stage.Stage;
 
-public class datail_Info_Controller0 implements Initializable{
+public class datail_Info_Controller5 implements Initializable{
 	Parent root;
 	PieChart pieChart;
 	BarChart barChart;
 
-	public void setRoot(Parent root,String s) {
+	public void setRoot(Parent root) {
 		this.root = root;
 		pieChart = (PieChart)root.lookup("#pieChart");
 		barChart = (BarChart)root.lookup("#barChart");
 		chart();
-		Label a = (Label)root.lookup("#story");
-		a.setText(s);
 	}
 	
 public void chart() {

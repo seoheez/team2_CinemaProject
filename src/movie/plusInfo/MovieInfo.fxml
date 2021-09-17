@@ -87,37 +87,37 @@
             <Font size="64.0" />
          </font>
       </Label>
-      <Button fx:id="detailZero" layoutX="150.0" layoutY="207.0" mnemonicParsing="false" onAction="#detailViewZero" style="-fx-background-color: black;" text="상세보기" textFill="#faf7f7">
+      <Button fx:id="detail0" layoutX="150.0" layoutY="207.0" mnemonicParsing="false" onAction="#detailView" style="-fx-background-color: black;" text="상세보기" textFill="#faf7f7">
          <font>
             <Font size="14.0" />
          </font>
       </Button>
-      <Button fx:id="detailOne" layoutX="402.0" layoutY="207.0" mnemonicParsing="false" onAction="#detailView1" style="-fx-background-color: black;" text="상세보기" textFill="#faf7f7">
+      <Button fx:id="detail1" layoutX="402.0" layoutY="207.0" mnemonicParsing="false" onAction="#detailView" style="-fx-background-color: black;" text="상세보기" textFill="#faf7f7">
          <font>
             <Font size="14.0" />
          </font>
       </Button>
-      <Button layoutX="645.0" layoutY="207.0" mnemonicParsing="false" style="-fx-background-color: black;" text="상세보기" textFill="#faf7f7">
+      <Button fx:id="detail3" layoutX="645.0" layoutY="207.0" mnemonicParsing="false" onAction="#detailView" style="-fx-background-color: black;" text="상세보기" textFill="#faf7f7">
          <font>
             <Font size="14.0" />
          </font>
       </Button>
-      <Button layoutX="645.0" layoutY="466.0" mnemonicParsing="false" style="-fx-background-color: black;" text="상세보기" textFill="#faf7f7">
+      <Button fx:id="detail5" layoutX="645.0" layoutY="466.0" mnemonicParsing="false" onAction="#detailView" style="-fx-background-color: black;" text="상세보기" textFill="#faf7f7">
          <font>
             <Font size="14.0" />
          </font>
       </Button>
-      <Button layoutX="402.0" layoutY="466.0" mnemonicParsing="false" style="-fx-background-color: black;" text="상세보기" textFill="#faf7f7">
+      <Button fx:id="detail4" layoutX="402.0" layoutY="466.0" mnemonicParsing="false" onAction="#detailView" style="-fx-background-color: black;" text="상세보기" textFill="#faf7f7">
          <font>
             <Font size="14.0" />
          </font>
       </Button>
-      <Button layoutX="150.0" layoutY="466.0" mnemonicParsing="false" style="-fx-background-color: black;" text="상세보기" textFill="#faf7f7">
+      <Button fx:id="detail3" layoutX="151.0" layoutY="466.0" mnemonicParsing="false" onAction="#detailView" style="-fx-background-color: black;" text="상세보기" textFill="#faf7f7">
          <font>
             <Font size="14.0" />
          </font>
       </Button>
-      <Button fx:id="reserve" layoutX="703.0" layoutY="505.0" mnemonicParsing="false" onAction="#reserveBtn" prefHeight="66.0" prefWidth="154.0" style="-fx-background-color: #d72c2c;" text="예매하기" textFill="#000000e5">
+      <Button fx:id="reserve" layoutX="703.0" layoutY="505.0" mnemonicParsing="false" onAction="#reserveBtn" prefHeight="56.0" prefWidth="146.0" style="-fx-background-color: #d72c2c;" text="예매하기" textFill="#000000e5">
          <font>
             <Font size="23.0" />
          </font>

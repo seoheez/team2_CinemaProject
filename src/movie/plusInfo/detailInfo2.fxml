@@ -32,7 +32,7 @@
             <Font size="32.0" />
          </font>
       </Label>
-      <Label fx:id="story" contentDisplay="TOP" layoutX="31.0" layoutY="136.0" prefHeight="190.0" prefWidth="381.0" text="초인적인 능력을 가진 '텐 링즈'의 힘으로 수세기  동안 어둠의 세상을 지배해 온 '웬우' '샹치'는 아버지 '웬우' 밑에서 암살자로 훈련을 받지만 이를 거부하고 평범한 삶을 선택하는데..." textFill="#fcfcfc" textOverrun="CENTER_ELLIPSIS" wrapText="true">
+      <Label contentDisplay="TOP" layoutX="31.0" layoutY="136.0" prefHeight="190.0" prefWidth="381.0" text="초인적인 능력을 가진 '텐 링즈'의 힘으로 수세기  동안 어둠의 세상을 지배해 온 '웬우' '샹치'는 아버지 '웬우' 밑에서 암살자로 훈련을 받지만 이를 거부하고 평범한 삶을 선택하는데..." textFill="#fcfcfc" textOverrun="CENTER_ELLIPSIS" wrapText="true">
          <font>
             <Font size="18.0" />
          </font>
