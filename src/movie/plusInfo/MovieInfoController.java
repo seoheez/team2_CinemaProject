@@ -54,7 +54,7 @@ public class MovieInfoController implements Initializable{
 		}
 	}
 	
-	/*
+	
 	
 	public void detailView2(){
 		try {
@@ -137,7 +137,7 @@ public class MovieInfoController implements Initializable{
 			e.printStackTrace();
 		}
 	}
-	*/
+	
 	
 	public void reserveBtn(){
 		try {

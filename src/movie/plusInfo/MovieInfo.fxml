@@ -117,7 +117,7 @@
             <Font size="14.0" />
          </font>
       </Button>
-      <Button fx:id="reserve" layoutX="735.0" layoutY="512.0" mnemonicParsing="false" onAction="#reserveBtn" prefHeight="59.0" prefWidth="122.0" style="-fx-background-color: #d72c2c;" text="예매하기" textFill="#000000e5">
+      <Button fx:id="reserve" layoutX="703.0" layoutY="505.0" mnemonicParsing="false" onAction="#reserveBtn" prefHeight="66.0" prefWidth="154.0" style="-fx-background-color: #d72c2c;" text="예매하기" textFill="#000000e5">
          <font>
             <Font size="23.0" />
          </font>
