@@ -64,7 +64,6 @@ public class Controller implements Initializable{
 		ls = new LoginServiceImpl();
 	}
 	public void displayImage() {
-		System.out.println("111");
 		myImageView.setImage(myImage);
 	}
 }
