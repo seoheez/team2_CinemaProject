@@ -97,7 +97,7 @@
             <Font size="14.0" />
          </font>
       </Button>
-      <Button fx:id="detail3" layoutX="645.0" layoutY="207.0" mnemonicParsing="false" onAction="#detailView" style="-fx-background-color: black;" text="상세보기" textFill="#faf7f7">
+      <Button fx:id="detail2" layoutX="645.0" layoutY="207.0" mnemonicParsing="false" onAction="#detailView" style="-fx-background-color: black;" text="상세보기" textFill="#faf7f7">
          <font>
             <Font size="14.0" />
          </font>
