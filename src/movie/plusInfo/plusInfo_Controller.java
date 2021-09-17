@@ -79,7 +79,6 @@ public class plusInfo_Controller implements Initializable{
 		}
 }
 	
-<<<<<<< HEAD
 	public void reserveBtn() {
 			try {
 				Stage primaryStage = new Stage();
@@ -139,8 +138,6 @@ public class plusInfo_Controller implements Initializable{
 	
 		
 
-=======
->>>>>>> yujin
 
 @Override
 public void initialize(URL arg0, ResourceBundle arg1) {	}
