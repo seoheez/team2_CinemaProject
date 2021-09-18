@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.chart.BarChart?>
+<?import javafx.scene.chart.CategoryAxis?>
+<?import javafx.scene.chart.NumberAxis?>
+<?import javafx.scene.chart.PieChart?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.effect.Light.Distant?>
+<?import javafx.scene.effect.Lighting?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="495.0" prefWidth="756.0" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="movie.plusInfo.datail_Info_Controller0">
+   <children>
+      <ImageView fx:id="ticketId" fitHeight="506.0" fitWidth="768.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../img/ticket.jpg" />
+         </image>
+         <effect>
+            <Lighting bumpInput="$null" diffuseConstant="0.55">
+               <light>
+                  <Light.Distant />
+               </light>
+            </Lighting>
+         </effect>
+      </ImageView>
+      <Label layoutX="31.0" layoutY="14.0" prefHeight="65.0" prefWidth="136.0" text="상세정보" textFill="#f7f5f5">
+         <font>
+            <Font size="32.0" />
+         </font>
+      </Label>
+      <Label contentDisplay="TOP" layoutX="31.0" layoutY="136.0" prefHeight="190.0" prefWidth="381.0" text="초인적인 능력을 가진 '텐 링즈'의 힘으로 수세기  동안 어둠의 세상을 지배해 온 '웬우' '샹치'는 아버지 '웬우' 밑에서 암살자로 훈련을 받지만 이를 거부하고 평범한 삶을 선택하는데..." textFill="#fcfcfc" textOverrun="CENTER_ELLIPSIS" wrapText="true">
+         <font>
+            <Font size="18.0" />
+         </font>
+         <opaqueInsets>
+            <Insets />
+         </opaqueInsets>
+      </Label>
+      <Label layoutX="31.0" layoutY="70.0" prefHeight="65.0" prefWidth="136.0" text="개요 액션" textFill="#f7f5f5">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Label>
+      <Label layoutX="31.0" layoutY="128.0" prefHeight="65.0" prefWidth="136.0" text="줄거리" textFill="#f7f5f5">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Label>
+      <Label layoutX="451.0" layoutY="128.0" prefHeight="65.0" prefWidth="136.0" text="메인 예고편" textFill="#f7f5f5">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Label>
+      <BarChart fx:id="barChart" layoutX="279.0" layoutY="287.0" prefHeight="190.0" prefWidth="266.0">
+        <xAxis>
+          <CategoryAxis side="BOTTOM" />
+        </xAxis>
+        <yAxis>
+          <NumberAxis side="LEFT" />
+        </yAxis>
+      </BarChart>
+      <PieChart fx:id="pieChart" layoutX="44.0" layoutY="307.0" prefHeight="146.0" prefWidth="210.0" />
+   </children>
+</AnchorPane>

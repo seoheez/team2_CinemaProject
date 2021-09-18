@@ -1,31 +1,175 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
+<?import javafx.geometry.Insets?>
 <?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.DatePicker?>
 <?import javafx.scene.control.Label?>
 <?import javafx.scene.control.ListView?>
 <?import javafx.scene.image.Image?>
 <?import javafx.scene.image.ImageView?>
 <?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
 <?import javafx.scene.text.Font?>
 
-<AnchorPane prefHeight="495.0" prefWidth="759.0" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="movie.plusInfo.plusInfo_Controller">
+<AnchorPane prefHeight="607.0" prefWidth="862.0" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="movie.plusInfo.plusInfo_Controller">
    <children>
-      <ImageView fitHeight="508.0" fitWidth="759.0" pickOnBounds="true" preserveRatio="true">
+      <ImageView fitHeight="648.0" fitWidth="918.0" layoutY="-2.0" pickOnBounds="true" preserveRatio="true">
          <image>
             <Image url="@../../img/ticket.jpg" />
          </image>
       </ImageView>
-      <ListView fx:id="fxListView" layoutX="30.0" layoutY="68.0" prefHeight="194.0" prefWidth="214.0" style="-fx-background-color: transparent;" />
-      <Label layoutX="30.0" layoutY="29.0" prefHeight="27.0" prefWidth="200.0" text="현재 상영 영화" textFill="#faf8f8">
+      <ListView fx:id="fxListView" layoutX="50.0" layoutY="49.0" prefHeight="194.0" prefWidth="214.0" style="-fx-background-color: transparent;" />
+      <ImageView fx:id="fxImageView" fitHeight="204.0" fitWidth="147.0" layoutX="299.0" layoutY="49.0" pickOnBounds="true" preserveRatio="true" />
+      <DatePicker layoutX="39.0" layoutY="328.0" />
+      <ComboBox layoutX="39.0" layoutY="395.0" prefHeight="14.0" prefWidth="187.0" />
+      <ComboBox layoutX="39.0" layoutY="464.0" prefHeight="14.0" prefWidth="187.0" />
+      <ComboBox layoutX="39.0" layoutY="532.0" prefHeight="14.0" prefWidth="187.0" />
+      <Button fx:id="Info" layoutX="744.0" layoutY="543.0" mnemonicParsing="false" onAction="#InfoBtn" prefHeight="50.0" prefWidth="153.0" style="-fx-background-color: #eb9d31;" text="예매확인" textFill="#20201fbf">
          <font>
-            <Font size="25.0" />
-         </font>
-      </Label>
-      <ImageView fx:id="fxImageView" fitHeight="418.0" fitWidth="300.0" layoutX="297.0" layoutY="44.0" pickOnBounds="true" preserveRatio="true" />
-      <Button layoutX="642.0" layoutY="451.0" mnemonicParsing="false" onAction="#reserveBtn" prefHeight="42.0" prefWidth="105.0" style="-fx-background-color: #bf8c14;" text="예매하기" textFill="#fcf9f9">
-         <font>
-            <Font size="19.0" />
+            <Font size="27.0" />
          </font>
       </Button>
+      <Label layoutX="41.0" layoutY="295.0" text="날짜" textFill="#faf7f7">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="40.0" layoutY="504.0" text="인원수" textFill="#faf7f7">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="41.0" layoutY="363.0" text="영화" textFill="#faf7f7">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="41.0" layoutY="433.0" text="시간" textFill="#faf7f7">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="485.0" layoutY="33.0" prefHeight="50.0" prefWidth="418.0" style="-fx-background-color: gray;" text="                Screen" textAlignment="JUSTIFY" textFill="#f7f1f1">
+         <font>
+            <Font size="37.0" />
+         </font>
+      </Label>
+      <HBox alignment="TOP_CENTER" layoutX="476.0" layoutY="99.0" prefHeight="78.0" prefWidth="436.0" style="-fx-background-color: gray;">
+         <children>
+            <Button alignment="CENTER" mnemonicParsing="false" prefHeight="50.0" prefWidth="50.0" text="1" textAlignment="RIGHT">
+               <HBox.margin>
+                  <Insets right="15.0" top="12.0" />
+               </HBox.margin>
+            </Button>
+            <Button alignment="CENTER" mnemonicParsing="false" prefHeight="50.0" prefWidth="50.0" text="2" textAlignment="RIGHT">
+               <HBox.margin>
+                  <Insets right="15.0" top="12.0" />
+               </HBox.margin>
+            </Button>
+            <Button alignment="CENTER" mnemonicParsing="false" prefHeight="50.0" prefWidth="50.0" text="3" textAlignment="RIGHT">
+               <HBox.margin>
+                  <Insets right="15.0" top="12.0" />
+               </HBox.margin>
+            </Button>
+            <Button alignment="CENTER" mnemonicParsing="false" prefHeight="50.0" prefWidth="50.0" text="4" textAlignment="RIGHT">
+               <HBox.margin>
+                  <Insets right="15.0" top="12.0" />
+               </HBox.margin>
+            </Button>
+            <Button alignment="CENTER" mnemonicParsing="false" prefHeight="50.0" prefWidth="50.0" text="5" textAlignment="RIGHT">
+               <HBox.margin>
+                  <Insets right="15.0" top="12.0" />
+               </HBox.margin>
+            </Button>
+         </children>
+      </HBox>
+      <HBox alignment="TOP_CENTER" layoutX="476.0" layoutY="190.0" prefHeight="78.0" prefWidth="436.0" style="-fx-background-color: gray;">
+         <children>
+            <Button alignment="CENTER" mnemonicParsing="false" prefHeight="50.0" prefWidth="50.0" text="6" textAlignment="RIGHT">
+               <HBox.margin>
+                  <Insets right="15.0" top="12.0" />
+               </HBox.margin>
+            </Button>
+            <Button alignment="CENTER" mnemonicParsing="false" prefHeight="50.0" prefWidth="50.0" text="7" textAlignment="RIGHT">
+               <HBox.margin>
+                  <Insets right="15.0" top="12.0" />
+               </HBox.margin>
+            </Button>
+            <Button alignment="CENTER" mnemonicParsing="false" prefHeight="50.0" prefWidth="50.0" text="8" textAlignment="RIGHT">
+               <HBox.margin>
+                  <Insets right="15.0" top="12.0" />
+               </HBox.margin>
+            </Button>
+            <Button alignment="CENTER" mnemonicParsing="false" prefHeight="50.0" prefWidth="50.0" text="9" textAlignment="RIGHT">
+               <HBox.margin>
+                  <Insets right="15.0" top="12.0" />
+               </HBox.margin>
+            </Button>
+            <Button alignment="CENTER" mnemonicParsing="false" prefHeight="50.0" prefWidth="50.0" text="10" textAlignment="RIGHT">
+               <HBox.margin>
+                  <Insets right="15.0" top="12.0" />
+               </HBox.margin>
+            </Button>
+         </children>
+      </HBox>
+      <HBox alignment="TOP_CENTER" layoutX="476.0" layoutY="279.0" prefHeight="78.0" prefWidth="436.0" style="-fx-background-color: gray;">
+         <children>
+            <Button alignment="CENTER" mnemonicParsing="false" prefHeight="50.0" prefWidth="50.0" text="11" textAlignment="RIGHT">
+               <HBox.margin>
+                  <Insets right="15.0" top="12.0" />
+               </HBox.margin>
+            </Button>
+            <Button alignment="CENTER" mnemonicParsing="false" prefHeight="50.0" prefWidth="50.0" text="12" textAlignment="RIGHT">
+               <HBox.margin>
+                  <Insets right="15.0" top="12.0" />
+               </HBox.margin>
+            </Button>
+            <Button alignment="CENTER" mnemonicParsing="false" prefHeight="50.0" prefWidth="50.0" text="13" textAlignment="RIGHT">
+               <HBox.margin>
+                  <Insets right="15.0" top="12.0" />
+               </HBox.margin>
+            </Button>
+            <Button alignment="CENTER" mnemonicParsing="false" prefHeight="50.0" prefWidth="50.0" text="14" textAlignment="RIGHT">
+               <HBox.margin>
+                  <Insets right="15.0" top="12.0" />
+               </HBox.margin>
+            </Button>
+            <Button alignment="CENTER" mnemonicParsing="false" prefHeight="50.0" prefWidth="50.0" text="15" textAlignment="RIGHT">
+               <HBox.margin>
+                  <Insets right="15.0" top="12.0" />
+               </HBox.margin>
+            </Button>
+         </children>
+      </HBox>
+      <HBox alignment="TOP_CENTER" layoutX="476.0" layoutY="367.0" prefHeight="78.0" prefWidth="436.0" style="-fx-background-color: gray;">
+         <children>
+            <Button alignment="CENTER" mnemonicParsing="false" prefHeight="50.0" prefWidth="50.0" text="16" textAlignment="RIGHT">
+               <HBox.margin>
+                  <Insets right="15.0" top="12.0" />
+               </HBox.margin>
+            </Button>
+            <Button alignment="CENTER" mnemonicParsing="false" prefHeight="50.0" prefWidth="50.0" text="17" textAlignment="RIGHT">
+               <HBox.margin>
+                  <Insets right="15.0" top="12.0" />
+               </HBox.margin>
+            </Button>
+            <Button alignment="CENTER" mnemonicParsing="false" prefHeight="50.0" prefWidth="50.0" text="18" textAlignment="RIGHT">
+               <HBox.margin>
+                  <Insets right="15.0" top="12.0" />
+               </HBox.margin>
+            </Button>
+            <Button alignment="CENTER" mnemonicParsing="false" prefHeight="50.0" prefWidth="50.0" text="19" textAlignment="RIGHT">
+               <HBox.margin>
+                  <Insets right="15.0" top="12.0" />
+               </HBox.margin>
+            </Button>
+            <Button alignment="CENTER" mnemonicParsing="false" prefHeight="50.0" prefWidth="50.0" text="20" textAlignment="RIGHT">
+               <HBox.margin>
+                  <Insets right="15.0" top="12.0" />
+               </HBox.margin>
+            </Button>
+         </children>
+      </HBox>
    </children>
 </AnchorPane>

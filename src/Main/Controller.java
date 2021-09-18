@@ -11,7 +11,7 @@ import javafx.scene.Scene;
 import javafx.scene.image.Image;
 import javafx.scene.image.ImageView;
 import javafx.stage.Stage;
-import movie.plusInfo.plusInfo_Controller;
+import movie.plusInfo.MovieInfoController;
 import sign.loginService.LoginService;
 import sign.loginService.LoginServiceImpl;
 import sign.member.MemberProc;
@@ -36,12 +36,11 @@ public class Controller implements Initializable{
 		try {
 			Stage primaryStage = new Stage();
 			FXMLLoader loader = 
-					new FXMLLoader(getClass().getResource("/movie/plusInfo/plusInfo.fxml")); 
+					new FXMLLoader(getClass().getResource("/movie/plusInfo/MovieInfo.fxml")); 
 			Parent root = loader.load();
 			Scene scene = new Scene(root);
-			plusInfo_Controller ctl = loader.getController();
+			MovieInfoController ctl = loader.getController();
 			ctl.setRoot(root);
-			
 			primaryStage.setScene(scene);
 			primaryStage.show();
 		} catch (Exception e) {
@@ -65,7 +64,6 @@ public class Controller implements Initializable{
 		ls = new LoginServiceImpl();
 	}
 	public void displayImage() {
-		System.out.println("111");
 		myImageView.setImage(myImage);
 	}
 }
