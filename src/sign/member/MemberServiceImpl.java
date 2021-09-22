@@ -17,11 +17,8 @@ import sign.member_dto.MemberDTO;
 public class MemberServiceImpl implements MemberService{
 	Parent root;
 	public void addComboBox() {
-		ComboBox<String> cmbAge = (ComboBox<String>)root.lookup("#cmbAge");
-		if(cmbAge != null) {
-			cmbAge.getItems().addAll("20대 미만", "20대", "30대","40대 이상");
-		}
 	}
+	
 	public void memberCancle() {
 		System.out.println("취소 클릭");
 		CommonService cs = new CommonServiceImpl();
@@ -29,30 +26,25 @@ public class MemberServiceImpl implements MemberService{
 		cs.windowClose();
 	}
 	public void check() {
-		TextField tx = (TextField)root.lookup("#fxName");
-		TextField pf = (TextField)root.lookup("#fxPw");
-		if(tx.getText().isEmpty()) {
+		TextField ax = (TextField)root.lookup("#fxName");
+		TextField bf = (TextField)root.lookup("#fxID");
+		TextField cf = (TextField)root.lookup("#fxPw");
+		TextField df = (TextField)root.lookup("#fxPwOk");
+		if(ax.getText().isEmpty()) {
 			alertMethod("이름은 필수 항목입니다");
-			tx.requestFocus();
+			ax.requestFocus();
 		}
-		else if(pf.getText().isEmpty()) {
-			alertMethod("비밀번호 필수 항목입니다");
+		else if(bf.getText().isEmpty()) {
+			alertMethod("아이디는 필수 항목입니다");
+		}
+		else if(cf.getText().isEmpty()) {
+			alertMethod("비밀번호는 필수 입력사항입니다");
 		}
 	}
 	public void alertMethod(String msg) {
 		Alert alert =new Alert(AlertType.INFORMATION);
 		alert.setContentText(msg);
 		alert.show();
-	}
-	public String getComboBox() {
-		ComboBox<String> cmbAge = (ComboBox<String>)root.lookup("#cmbAge");
-		String age = null;
-		if(cmbAge.getValue() == null) {
-			System.out.println("콤보박스를 선택해 주세요");
-		}else {
-			age = cmbAge.getValue().toString();
-		}
-		return age;
 	}
 	public boolean getGender() {
 		RadioButton rdoMan = (RadioButton)root.lookup("#rdoMan");
@@ -66,11 +58,9 @@ public class MemberServiceImpl implements MemberService{
 		check();
 
 		dto.setName( ((TextField)root.lookup("#fxName")).getText() );
-		dto.setAge( getComboBox() );
 		dto.setGender( getGender() );
 
 		System.out.println( dto.getName() );
-		System.out.println( dto.getAge() );
 	}
 	@Override
 	public void setRoot(Parent root) {

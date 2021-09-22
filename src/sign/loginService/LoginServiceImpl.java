@@ -1,8 +1,10 @@
 package sign.loginService;
 
 import javafx.scene.Parent;
+import javafx.scene.control.Alert;
 import javafx.scene.control.PasswordField;
 import javafx.scene.control.TextField;
+import javafx.scene.control.Alert.AlertType;
 import sign.common.CommonService;
 import sign.common.CommonServiceImpl;
 
@@ -13,12 +15,20 @@ public class LoginServiceImpl implements LoginService{
 	}
 	@Override
 	public void loginCheck() {
-		System.out.println("로그인 성공");
 		TextField tf = (TextField)root.lookup("#fxId");
 		PasswordField pf = (PasswordField)root.lookup("#fxPwd");
-		System.out.println(tf.getText());
-		System.out.println(pf.getText());
+		 
+		if(!tf.getText().isEmpty()&&
+				!pf.getText().isEmpty()) {
+			alertMethod("아이디는 필수 항목입니다");
+		}
 	}
+	
+	public void alertMethod(String msg) {
+		Alert alert =new Alert(AlertType.INFORMATION);
+		alert.setContentText(msg);
+		alert.show();
+		}
 	@Override
 	public void loginClose() {
 		System.out.println("화면을 닫겠습니다");
