@@ -28,18 +28,18 @@ public class datail_Info_Controller5 implements Initializable{
 public void chart() {
 		
 		pieChart.setData(FXCollections.observableArrayList(
-				new PieChart.Data("남성", 54.8),
-				new PieChart.Data("여성", 45.2)
+				new PieChart.Data("남성", 20.8),
+				new PieChart.Data("여성", 79.2)
 				));
 
 		XYChart.Series series1 = new XYChart.Series();
 		series1.setName("연령별 예매 분포");
 		series1.setData(FXCollections.observableArrayList(
-					new XYChart.Data("10대",2.30),
-					new XYChart.Data("20대",33.30),
-					new XYChart.Data("30대",33.70),
-					new XYChart.Data("40대",20.30),
-					new XYChart.Data("50대",10.40)
+					new XYChart.Data("10대",12.30),
+					new XYChart.Data("20대",13.30),
+					new XYChart.Data("30대",13.70),
+					new XYChart.Data("40대",30.30),
+					new XYChart.Data("50대",30.40)
 				));
 	
 		barChart.getData().add(series1);

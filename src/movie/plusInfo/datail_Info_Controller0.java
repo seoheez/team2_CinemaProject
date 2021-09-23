@@ -33,8 +33,8 @@ public class datail_Info_Controller0 implements Initializable{
 public void chart() {
 		
 		pieChart.setData(FXCollections.observableArrayList(
-				new PieChart.Data("남성", 54.8),
-				new PieChart.Data("여성", 45.2)
+				new PieChart.Data("남성", 70.8),
+				new PieChart.Data("여성", 29.2)
 				));
 
 		XYChart.Series series1 = new XYChart.Series();

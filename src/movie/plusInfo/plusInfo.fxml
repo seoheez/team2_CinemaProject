@@ -22,9 +22,9 @@
       <ListView fx:id="fxListView" layoutX="50.0" layoutY="49.0" prefHeight="194.0" prefWidth="214.0" style="-fx-background-color: transparent;" />
       <ImageView fx:id="fxImageView" fitHeight="204.0" fitWidth="147.0" layoutX="299.0" layoutY="49.0" pickOnBounds="true" preserveRatio="true" />
       <DatePicker layoutX="39.0" layoutY="328.0" />
-      <ComboBox layoutX="39.0" layoutY="395.0" prefHeight="14.0" prefWidth="187.0" />
-      <ComboBox layoutX="39.0" layoutY="464.0" prefHeight="14.0" prefWidth="187.0" />
-      <ComboBox layoutX="39.0" layoutY="532.0" prefHeight="14.0" prefWidth="187.0" />
+      <ComboBox fx:id="cmbTitle" layoutX="39.0" layoutY="395.0" prefHeight="14.0" prefWidth="187.0" />
+      <ComboBox fx:id="cmbTime" layoutX="39.0" layoutY="464.0" prefHeight="14.0" prefWidth="187.0" />
+      <ComboBox fx:id="cmbCount" layoutX="39.0" layoutY="532.0" prefHeight="14.0" prefWidth="187.0" />
       <Button fx:id="Info" layoutX="744.0" layoutY="543.0" mnemonicParsing="false" onAction="#InfoBtn" prefHeight="50.0" prefWidth="153.0" style="-fx-background-color: #eb9d31;" text="예매확인" textFill="#20201fbf">
          <font>
             <Font size="27.0" />
