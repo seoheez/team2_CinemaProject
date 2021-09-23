@@ -16,7 +16,7 @@
             <Image url="@../img/pop.jpg" />
          </image>
          <effect>
-            <Lighting diffuseConstant="1.21" specularConstant="1.51" surfaceScale="10.0">
+            <Lighting diffuseConstant="0.35" specularConstant="0.21" surfaceScale="9.25">
                <bumpInput>
                   <MotionBlur />
                </bumpInput>
@@ -26,13 +26,38 @@
             </Lighting>
          </effect>
       </ImageView>
-      <Label layoutX="47.0" layoutY="33.0" prefHeight="62.0" prefWidth="177.0" text="예매 내역">
+      <Label layoutX="40.0" layoutY="142.0" prefHeight="50.0" prefWidth="98.0" text="영화제목" textFill="WHITE">
+         <font>
+            <Font size="24.0" />
+         </font></Label>
+      <Label layoutX="311.0" layoutY="57.0" prefHeight="62.0" prefWidth="158.0" text="예매 내역" textFill="WHITE">
          <font>
             <Font size="36.0" />
          </font></Label>
-      <Label layoutX="47.0" layoutY="205.0" text="영화제목" />
-      <Label layoutX="47.0" layoutY="237.0" text="상영시간" />
-      <Label layoutX="47.0" layoutY="273.0" text="인원" />
-      <Label layoutX="47.0" layoutY="310.0" text="좌석" />
+      <Label layoutX="40.0" layoutY="320.0" prefHeight="50.0" prefWidth="98.0" text="인원" textFill="WHITE">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Label>
+      <Label layoutX="40.0" layoutY="260.0" prefHeight="50.0" prefWidth="98.0" text="관람시간" textFill="WHITE">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Label>
+      <Label layoutX="40.0" layoutY="381.0" prefHeight="50.0" prefWidth="98.0" text="좌석" textFill="WHITE">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Label>
+      <Label layoutX="40.0" layoutY="201.0" prefHeight="50.0" prefWidth="98.0" text="날짜" textFill="WHITE">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Label>
+      <Label layoutX="179.0" layoutY="153.0" prefHeight="29.0" prefWidth="150.0" style="-fx-background-color: gray;" />
+      <Label layoutX="179.0" layoutY="211.0" prefHeight="29.0" prefWidth="150.0" style="-fx-background-color: gray;" />
+      <Label layoutX="179.0" layoutY="271.0" prefHeight="29.0" prefWidth="150.0" style="-fx-background-color: gray;" />
+      <Label layoutX="179.0" layoutY="330.0" prefHeight="29.0" prefWidth="150.0" style="-fx-background-color: gray;" />
+      <Label layoutX="179.0" layoutY="391.0" prefHeight="29.0" prefWidth="150.0" style="-fx-background-color: gray;" />
    </children>
 </AnchorPane>
