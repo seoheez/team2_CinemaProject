@@ -53,30 +53,17 @@ public class MovieInfoController implements Initializable{
 		System.out.println(btn.indexOf(((Button)(view.getSource())).getId()));
 		//Zero(outline.get(btn.indexOf(((Button)(view.getSource())).getId())));
 		
+		System.out.println(((Button)(view.getSource())).getId());
+		ArrayList<String> rTime = new ArrayList<String>();
+		rTime.add("132분");
+		rTime.add("94분");
+		rTime.add("99분");
+		rTime.add("121분");
+		rTime.add("115분");
+		rTime.add("98분");
+		System.out.println(btn.indexOf(((Button)(view.getSource())).getId()));
 		
-		ArrayList chart1 = new ArrayList();
-		chart1.add("pChart0");
-		chart1.add("pChart1");
-		chart1.add("pChart2");
-		chart1.add("pChart3");
-		chart1.add("pChart4");
-		chart1.add("pChart5");
-		System.out.println(chart1.indexOf(((Button)(view.getSource())).getId()));
-//		Zero(arr.get(btn.indexOf(((Button)(view.getSource())).getId())));
-		
-		
-		ArrayList chart2 = new ArrayList();
-		chart2.add("bChart0");
-		chart2.add("bChart1");
-		chart2.add("bChart2");
-		chart2.add("bChart3");
-		chart2.add("bChart4");
-		chart2.add("bChart5");
-		System.out.println(chart2.indexOf(((Button)(view.getSource())).getId()));
-//		Zero(arr.get(btn.indexOf(((Button)(view.getSource())).getId())));
-		
-		String[] o = {arr.get(btn.indexOf(((Button)(view.getSource())).getId())),outline.get(btn.indexOf(((Button)(view.getSource())).getId())) ,(btn.indexOf(((Button)(view.getSource())).getId()))+""};
-		
+		String[] o = {arr.get(btn.indexOf(((Button)(view.getSource())).getId())),outline.get(btn.indexOf(((Button)(view.getSource())).getId())) ,rTime.get(btn.indexOf(((Button)(view.getSource())).getId())),(btn.indexOf(((Button)(view.getSource())).getId()))+""};
 		Zero(o);
 	}
 	public void Zero(String[] s){

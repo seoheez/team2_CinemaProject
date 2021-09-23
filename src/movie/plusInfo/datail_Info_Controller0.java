@@ -23,11 +23,13 @@ public class datail_Info_Controller0 implements Initializable{
 		this.root = root;
 		pieChart = (PieChart)root.lookup("#pieChart");
 		barChart = (BarChart)root.lookup("#barChart");
-		chart(s[2]);
+		chart(s[3]);
 		Label a = (Label)root.lookup("#story");
 		Label b = (Label)root.lookup("#outline");
+		Label c = (Label)root.lookup("#rTime");
 		a.setText(s[0]);
 		b.setText(s[1]);
+		c.setText(s[2]);
 	}
 	
 public void chart(String ss) {
@@ -70,7 +72,7 @@ public void chart(String ss) {
 				new PieChart.Data("여성", gender5[1])
 				));}
 		
-		
+			
 		XYChart.Series series1 = new XYChart.Series();
 		series1.setName("연령별 예매 분포");
 		series1.setData(FXCollections.observableArrayList(
@@ -80,7 +82,6 @@ public void chart(String ss) {
 					new XYChart.Data("40대",20.30),
 					new XYChart.Data("50대",10.40)
 				));
-	
 		barChart.getData().add(series1);
 	}
 
