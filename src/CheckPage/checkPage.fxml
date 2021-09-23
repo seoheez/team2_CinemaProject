@@ -1,14 +1,38 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <?import javafx.scene.control.Label?>
+<?import javafx.scene.effect.Light.Distant?>
+<?import javafx.scene.effect.Lighting?>
+<?import javafx.scene.effect.MotionBlur?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.text.Font?>
 
-<AnchorPane prefHeight="363.0" prefWidth="547.0" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="CheckPage.check_Controller">
+<AnchorPane prefHeight="571.0" prefWidth="762.0" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="CheckPage.check_Controller">
    <children>
-      <Label layoutX="55.0" layoutY="96.0" prefHeight="81.0" prefWidth="181.0" text="예매 확인창 만들기">
+      <ImageView fitHeight="571.0" fitWidth="902.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../img/pop.jpg" />
+         </image>
+         <effect>
+            <Lighting diffuseConstant="1.21" specularConstant="1.51" surfaceScale="10.0">
+               <bumpInput>
+                  <MotionBlur />
+               </bumpInput>
+               <light>
+                  <Light.Distant />
+               </light>
+            </Lighting>
+         </effect>
+      </ImageView>
+      <Label layoutX="47.0" layoutY="33.0" prefHeight="62.0" prefWidth="177.0" text="예매 내역">
          <font>
-            <Font size="16.0" />
+            <Font size="36.0" />
          </font></Label>
+      <Label layoutX="47.0" layoutY="205.0" text="영화제목" />
+      <Label layoutX="47.0" layoutY="237.0" text="상영시간" />
+      <Label layoutX="47.0" layoutY="273.0" text="인원" />
+      <Label layoutX="47.0" layoutY="310.0" text="좌석" />
    </children>
 </AnchorPane>
