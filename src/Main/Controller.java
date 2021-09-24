@@ -8,6 +8,9 @@ import javafx.fxml.FXMLLoader;
 import javafx.fxml.Initializable;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
+import javafx.scene.control.Alert;
+import javafx.scene.control.TextField;
+import javafx.scene.control.Alert.AlertType;
 import javafx.scene.image.Image;
 import javafx.scene.image.ImageView;
 import javafx.stage.Stage;
@@ -32,6 +35,18 @@ public class Controller implements Initializable{
 	}
 
 	public void btnOk() {
+		TextField id = (TextField)root.lookup("#fxId");
+		TextField pwd = (TextField)root.lookup("#fxPwd");
+		if(id.getText().isEmpty()) {
+			alertMethod("아이디는 필수 항목입니다");
+			id.requestFocus();
+			return;
+		}
+		else if(pwd.getText().isEmpty()) {
+			alertMethod("비번은 필수 항목입니다");
+			return;
+		}
+		
 		//ls.loginCheck();
 		try {
 			Stage primaryStage = new Stage();
@@ -66,4 +81,9 @@ public class Controller implements Initializable{
 	public void displayImage() {
 		myImageView.setImage(myImage);
 	}
+	public void alertMethod(String msg) {
+		Alert alert =new Alert(AlertType.INFORMATION);
+		alert.setContentText(msg);
+		alert.show();
+		}
 }

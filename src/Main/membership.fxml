@@ -62,7 +62,7 @@
                   <TextField fx:id="fxPw" layoutY="37.0" prefHeight="22.0" prefWidth="132.0" />
                </children>
             </AnchorPane>
-            <TextField fx:id="fxID" alignment="CENTER" prefHeight="22.0" prefWidth="180.0" GridPane.columnIndex="2" GridPane.rowIndex="1" />
+            <TextField fx:id="fxID" prefHeight="22.0" prefWidth="180.0" GridPane.columnIndex="2" GridPane.rowIndex="1" />
             <TextField fx:id="fxName" GridPane.columnIndex="2" />
             <Button mnemonicParsing="false" onAction="#memberCancle" prefHeight="30.0" prefWidth="111.0" text="취  소" GridPane.columnIndex="2" GridPane.rowIndex="3">
                <font>

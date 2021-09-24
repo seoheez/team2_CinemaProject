@@ -4,26 +4,18 @@ import javafx.scene.Parent;
 import javafx.scene.control.Alert;
 import javafx.scene.control.PasswordField;
 import javafx.scene.control.TextField;
+import loginDto.LoginDto;
 import javafx.scene.control.Alert.AlertType;
 import sign.common.CommonService;
 import sign.common.CommonServiceImpl;
+import sign.member_dto.MemberDTO;
 
 public class LoginServiceImpl implements LoginService{
 	Parent root;
 	public void setRoot(Parent root) {
 		this.root = root;
 	}
-	@Override
-	public void loginCheck() {
-		TextField tf = (TextField)root.lookup("#fxId");
-		PasswordField pf = (PasswordField)root.lookup("#fxPwd");
-		 
-		if(!tf.getText().isEmpty()&&
-				!pf.getText().isEmpty()) {
-			alertMethod("아이디는 필수 항목입니다");
-		}
-	}
-	
+		
 	public void alertMethod(String msg) {
 		Alert alert =new Alert(AlertType.INFORMATION);
 		alert.setContentText(msg);
@@ -36,5 +28,12 @@ public class LoginServiceImpl implements LoginService{
 		cs.setRoot(root);
 		cs.windowClose();
 	}
-	
+
+	@Override
+	public void loginCheck() {
+		// TODO Auto-generated method stub
+		
+	}
 }
+		
+	

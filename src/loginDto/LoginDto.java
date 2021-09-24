@@ -1,6 +1,6 @@
-package sign.member_dto;
+package loginDto;
 
-public class MemberDTO {
+public class LoginDto {
 	private String name;
 	private String id;
 	private String pw;
