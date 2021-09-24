@@ -6,6 +6,7 @@
 <?import javafx.scene.control.DatePicker?>
 <?import javafx.scene.control.Label?>
 <?import javafx.scene.control.ListView?>
+<?import javafx.scene.control.ToggleButton?>
 <?import javafx.scene.image.Image?>
 <?import javafx.scene.image.ImageView?>
 <?import javafx.scene.layout.AnchorPane?>
@@ -55,91 +56,141 @@
             <Font size="37.0" />
          </font>
       </Label>
-      <HBox alignment="TOP_CENTER" layoutX="445.0" layoutY="136.0" prefHeight="78.0" prefWidth="394.0" style="-fx-background-color: gray;">
+      <HBox alignment="TOP_CENTER" layoutX="445.0" layoutY="142.0" prefHeight="78.0" prefWidth="394.0" style="-fx-background-color: gray;">
          <children>
-            <Button alignment="CENTER" mnemonicParsing="false" prefHeight="50.0" prefWidth="50.0" text="1" textAlignment="RIGHT">
+            <ToggleButton contentDisplay="CENTER" mnemonicParsing="false" prefHeight="50.0" prefWidth="50.0" text="1">
+               <opaqueInsets>
+                  <Insets bottom="4.0" left="8.0" right="8.0" top="4.0" />
+               </opaqueInsets>
                <HBox.margin>
                   <Insets right="15.0" top="12.0" />
                </HBox.margin>
-            </Button>
-            <Button alignment="CENTER" mnemonicParsing="false" prefHeight="50.0" prefWidth="50.0" text="2" textAlignment="RIGHT">
+            </ToggleButton>
+            <ToggleButton contentDisplay="CENTER" mnemonicParsing="false" prefHeight="50.0" prefWidth="50.0" text="2">
+               <opaqueInsets>
+                  <Insets bottom="4.0" left="8.0" right="8.0" top="4.0" />
+               </opaqueInsets>
                <HBox.margin>
                   <Insets right="15.0" top="12.0" />
                </HBox.margin>
-            </Button>
-            <Button alignment="CENTER" mnemonicParsing="false" prefHeight="50.0" prefWidth="50.0" text="3" textAlignment="RIGHT">
+            </ToggleButton>
+            <ToggleButton contentDisplay="CENTER" mnemonicParsing="false" prefHeight="50.0" prefWidth="50.0" text="3">
+               <opaqueInsets>
+                  <Insets />
+               </opaqueInsets>
                <HBox.margin>
                   <Insets right="15.0" top="12.0" />
                </HBox.margin>
-            </Button>
-            <Button alignment="CENTER" mnemonicParsing="false" prefHeight="50.0" prefWidth="50.0" text="4" textAlignment="RIGHT">
+            </ToggleButton>
+            <ToggleButton contentDisplay="CENTER" mnemonicParsing="false" prefHeight="50.0" prefWidth="50.0" text="4">
+               <opaqueInsets>
+                  <Insets bottom="4.0" left="8.0" right="8.0" top="4.0" />
+               </opaqueInsets>
                <HBox.margin>
                   <Insets right="15.0" top="12.0" />
                </HBox.margin>
-            </Button>
-            <Button alignment="CENTER" mnemonicParsing="false" prefHeight="50.0" prefWidth="50.0" text="5" textAlignment="RIGHT">
+            </ToggleButton>
+            <ToggleButton contentDisplay="CENTER" mnemonicParsing="false" prefHeight="50.0" prefWidth="50.0" text="5">
+               <opaqueInsets>
+                  <Insets />
+               </opaqueInsets>
                <HBox.margin>
                   <Insets right="15.0" top="12.0" />
                </HBox.margin>
-            </Button>
+            </ToggleButton>
          </children>
       </HBox>
-      <HBox alignment="TOP_CENTER" layoutX="445.0" layoutY="227.0" prefHeight="78.0" prefWidth="394.0" style="-fx-background-color: gray;">
+      <Button fx:id="preBtn" layoutX="13.0" layoutY="14.0" mnemonicParsing="false" onAction="#preBtn" prefHeight="36.0" prefWidth="106.0" text="이전으로">
+         <font>
+            <Font size="19.0" />
+         </font>
+      </Button>
+      <HBox alignment="TOP_CENTER" layoutX="445.0" layoutY="233.0" prefHeight="78.0" prefWidth="394.0" style="-fx-background-color: gray;">
          <children>
-            <Button alignment="CENTER" mnemonicParsing="false" prefHeight="50.0" prefWidth="50.0" text="6" textAlignment="RIGHT">
+            <ToggleButton contentDisplay="CENTER" mnemonicParsing="false" prefHeight="50.0" prefWidth="50.0" text="6">
+               <opaqueInsets>
+                  <Insets bottom="4.0" left="8.0" right="8.0" top="4.0" />
+               </opaqueInsets>
                <HBox.margin>
                   <Insets right="15.0" top="12.0" />
                </HBox.margin>
-            </Button>
-            <Button alignment="CENTER" mnemonicParsing="false" prefHeight="50.0" prefWidth="50.0" text="7" textAlignment="RIGHT">
+            </ToggleButton>
+            <ToggleButton contentDisplay="CENTER" mnemonicParsing="false" prefHeight="50.0" prefWidth="50.0" text="7">
+               <opaqueInsets>
+                  <Insets bottom="4.0" left="8.0" right="8.0" top="4.0" />
+               </opaqueInsets>
                <HBox.margin>
                   <Insets right="15.0" top="12.0" />
                </HBox.margin>
-            </Button>
-            <Button alignment="CENTER" mnemonicParsing="false" prefHeight="50.0" prefWidth="50.0" text="8" textAlignment="RIGHT">
+            </ToggleButton>
+            <ToggleButton contentDisplay="CENTER" mnemonicParsing="false" prefHeight="50.0" prefWidth="50.0" text="8">
+               <opaqueInsets>
+                  <Insets />
+               </opaqueInsets>
                <HBox.margin>
                   <Insets right="15.0" top="12.0" />
                </HBox.margin>
-            </Button>
-            <Button alignment="CENTER" mnemonicParsing="false" prefHeight="50.0" prefWidth="50.0" text="9" textAlignment="RIGHT">
+            </ToggleButton>
+            <ToggleButton contentDisplay="CENTER" mnemonicParsing="false" prefHeight="50.0" prefWidth="50.0" text="9">
+               <opaqueInsets>
+                  <Insets bottom="4.0" left="8.0" right="8.0" top="4.0" />
+               </opaqueInsets>
                <HBox.margin>
                   <Insets right="15.0" top="12.0" />
                </HBox.margin>
-            </Button>
-            <Button alignment="CENTER" mnemonicParsing="false" prefHeight="50.0" prefWidth="50.0" text="10" textAlignment="RIGHT">
+            </ToggleButton>
+            <ToggleButton contentDisplay="CENTER" mnemonicParsing="false" prefHeight="50.0" prefWidth="50.0" text="10">
+               <opaqueInsets>
+                  <Insets />
+               </opaqueInsets>
                <HBox.margin>
                   <Insets right="15.0" top="12.0" />
                </HBox.margin>
-            </Button>
+            </ToggleButton>
          </children>
       </HBox>
-      <HBox alignment="TOP_CENTER" layoutX="445.0" layoutY="316.0" prefHeight="78.0" prefWidth="394.0" style="-fx-background-color: gray;">
+      <HBox alignment="TOP_CENTER" layoutX="445.0" layoutY="326.0" prefHeight="78.0" prefWidth="394.0" style="-fx-background-color: gray;">
          <children>
-            <Button alignment="CENTER" mnemonicParsing="false" prefHeight="50.0" prefWidth="50.0" text="11" textAlignment="RIGHT">
+            <ToggleButton contentDisplay="CENTER" mnemonicParsing="false" prefHeight="50.0" prefWidth="50.0" text="11">
+               <opaqueInsets>
+                  <Insets bottom="4.0" left="8.0" right="8.0" top="4.0" />
+               </opaqueInsets>
                <HBox.margin>
                   <Insets right="15.0" top="12.0" />
                </HBox.margin>
-            </Button>
-            <Button alignment="CENTER" mnemonicParsing="false" prefHeight="50.0" prefWidth="50.0" text="12" textAlignment="RIGHT">
+            </ToggleButton>
+            <ToggleButton contentDisplay="CENTER" mnemonicParsing="false" prefHeight="50.0" prefWidth="50.0" text="12">
+               <opaqueInsets>
+                  <Insets bottom="4.0" left="8.0" right="8.0" top="4.0" />
+               </opaqueInsets>
                <HBox.margin>
                   <Insets right="15.0" top="12.0" />
                </HBox.margin>
-            </Button>
-            <Button alignment="CENTER" mnemonicParsing="false" prefHeight="50.0" prefWidth="50.0" text="13" textAlignment="RIGHT">
+            </ToggleButton>
+            <ToggleButton contentDisplay="CENTER" mnemonicParsing="false" prefHeight="50.0" prefWidth="50.0" text="13">
+               <opaqueInsets>
+                  <Insets />
+               </opaqueInsets>
                <HBox.margin>
                   <Insets right="15.0" top="12.0" />
                </HBox.margin>
-            </Button>
-            <Button alignment="CENTER" mnemonicParsing="false" prefHeight="50.0" prefWidth="50.0" text="14" textAlignment="RIGHT">
+            </ToggleButton>
+            <ToggleButton contentDisplay="CENTER" mnemonicParsing="false" prefHeight="50.0" prefWidth="50.0" text="14">
+               <opaqueInsets>
+                  <Insets bottom="4.0" left="8.0" right="8.0" top="4.0" />
+               </opaqueInsets>
                <HBox.margin>
                   <Insets right="15.0" top="12.0" />
                </HBox.margin>
-            </Button>
-            <Button alignment="CENTER" mnemonicParsing="false" prefHeight="50.0" prefWidth="50.0" text="15" textAlignment="RIGHT">
+            </ToggleButton>
+            <ToggleButton contentDisplay="CENTER" mnemonicParsing="false" prefHeight="50.0" prefWidth="50.0" text="15">
+               <opaqueInsets>
+                  <Insets />
+               </opaqueInsets>
                <HBox.margin>
                   <Insets right="15.0" top="12.0" />
                </HBox.margin>
-            </Button>
+            </ToggleButton>
          </children>
       </HBox>
    </children>

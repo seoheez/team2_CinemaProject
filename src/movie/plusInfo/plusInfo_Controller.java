@@ -20,6 +20,8 @@ import javafx.scene.control.TextField;
 import javafx.scene.image.Image;
 import javafx.scene.image.ImageView;
 import javafx.stage.Stage;
+import sign.common.CommonService;
+import sign.common.CommonServiceImpl;
 
 public class plusInfo_Controller implements Initializable{
 	Parent root;
@@ -105,7 +107,28 @@ public class plusInfo_Controller implements Initializable{
 		} catch (Exception e) {
 			e.printStackTrace();
 		}
+		CommonService cs = new CommonServiceImpl();
+		cs.setRoot(root);
+		cs.windowClose();
 	}
+	public void preBtn() {
+		try {
+			Stage primaryStage = new Stage();
+			FXMLLoader loader = 
+					new FXMLLoader(getClass().getResource("/movie/plusInfo/MovieInfo.fxml")); 
+			Parent root = loader.load();
+			Scene scene = new Scene(root);
+			MovieInfoController ctl = loader.getController();
+			ctl.setRoot(root);
+			primaryStage.setScene(scene);
+			primaryStage.show();
+		} catch (Exception e) {
+			e.printStackTrace();
+		}
+		Stage stage = (Stage)root.getScene().getWindow();
+		stage.close();
+	}
+	
 
 
 	@Override
