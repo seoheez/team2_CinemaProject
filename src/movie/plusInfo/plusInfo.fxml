@@ -58,7 +58,7 @@
       </Label>
       <HBox alignment="TOP_CENTER" layoutX="445.0" layoutY="142.0" prefHeight="78.0" prefWidth="394.0" style="-fx-background-color: gray;">
          <children>
-            <ToggleButton contentDisplay="CENTER" mnemonicParsing="false" prefHeight="50.0" prefWidth="50.0" text="1">
+            <ToggleButton fx:id="a1" contentDisplay="CENTER" mnemonicParsing="false" onAction="#seat1" prefHeight="50.0" prefWidth="50.0" text="1">
                <opaqueInsets>
                   <Insets bottom="4.0" left="8.0" right="8.0" top="4.0" />
                </opaqueInsets>
@@ -66,7 +66,7 @@
                   <Insets right="15.0" top="12.0" />
                </HBox.margin>
             </ToggleButton>
-            <ToggleButton contentDisplay="CENTER" mnemonicParsing="false" prefHeight="50.0" prefWidth="50.0" text="2">
+            <ToggleButton fx:id="a2" contentDisplay="CENTER" mnemonicParsing="false" onAction="#seat2" prefHeight="50.0" prefWidth="50.0" text="2">
                <opaqueInsets>
                   <Insets bottom="4.0" left="8.0" right="8.0" top="4.0" />
                </opaqueInsets>
@@ -74,7 +74,7 @@
                   <Insets right="15.0" top="12.0" />
                </HBox.margin>
             </ToggleButton>
-            <ToggleButton contentDisplay="CENTER" mnemonicParsing="false" prefHeight="50.0" prefWidth="50.0" text="3">
+            <ToggleButton fx:id="a3" contentDisplay="CENTER" mnemonicParsing="false" onAction="#seat3" prefHeight="50.0" prefWidth="50.0" text="3">
                <opaqueInsets>
                   <Insets />
                </opaqueInsets>
@@ -82,7 +82,7 @@
                   <Insets right="15.0" top="12.0" />
                </HBox.margin>
             </ToggleButton>
-            <ToggleButton contentDisplay="CENTER" mnemonicParsing="false" prefHeight="50.0" prefWidth="50.0" text="4">
+            <ToggleButton fx:id="a4" contentDisplay="CENTER" mnemonicParsing="false" onAction="#seat4" prefHeight="50.0" prefWidth="50.0" text="4">
                <opaqueInsets>
                   <Insets bottom="4.0" left="8.0" right="8.0" top="4.0" />
                </opaqueInsets>
@@ -90,7 +90,7 @@
                   <Insets right="15.0" top="12.0" />
                </HBox.margin>
             </ToggleButton>
-            <ToggleButton contentDisplay="CENTER" mnemonicParsing="false" prefHeight="50.0" prefWidth="50.0" text="5">
+            <ToggleButton fx:id="a5" contentDisplay="CENTER" mnemonicParsing="false" onAction="#seat5" prefHeight="50.0" prefWidth="50.0" text="5">
                <opaqueInsets>
                   <Insets />
                </opaqueInsets>
@@ -107,7 +107,7 @@
       </Button>
       <HBox alignment="TOP_CENTER" layoutX="445.0" layoutY="233.0" prefHeight="78.0" prefWidth="394.0" style="-fx-background-color: gray;">
          <children>
-            <ToggleButton contentDisplay="CENTER" mnemonicParsing="false" prefHeight="50.0" prefWidth="50.0" text="6">
+            <ToggleButton fx:id="a6" contentDisplay="CENTER" mnemonicParsing="false" onAction="#seat6" prefHeight="50.0" prefWidth="50.0" text="6">
                <opaqueInsets>
                   <Insets bottom="4.0" left="8.0" right="8.0" top="4.0" />
                </opaqueInsets>
@@ -115,7 +115,7 @@
                   <Insets right="15.0" top="12.0" />
                </HBox.margin>
             </ToggleButton>
-            <ToggleButton contentDisplay="CENTER" mnemonicParsing="false" prefHeight="50.0" prefWidth="50.0" text="7">
+            <ToggleButton fx:id="a7" contentDisplay="CENTER" mnemonicParsing="false" onAction="#seat7" prefHeight="50.0" prefWidth="50.0" text="7">
                <opaqueInsets>
                   <Insets bottom="4.0" left="8.0" right="8.0" top="4.0" />
                </opaqueInsets>
@@ -123,7 +123,7 @@
                   <Insets right="15.0" top="12.0" />
                </HBox.margin>
             </ToggleButton>
-            <ToggleButton contentDisplay="CENTER" mnemonicParsing="false" prefHeight="50.0" prefWidth="50.0" text="8">
+            <ToggleButton fx:id="a8" contentDisplay="CENTER" mnemonicParsing="false" onAction="#seat8" prefHeight="50.0" prefWidth="50.0" text="8">
                <opaqueInsets>
                   <Insets />
                </opaqueInsets>
@@ -131,7 +131,7 @@
                   <Insets right="15.0" top="12.0" />
                </HBox.margin>
             </ToggleButton>
-            <ToggleButton contentDisplay="CENTER" mnemonicParsing="false" prefHeight="50.0" prefWidth="50.0" text="9">
+            <ToggleButton fx:id="a9" contentDisplay="CENTER" mnemonicParsing="false" onAction="#seat9" prefHeight="50.0" prefWidth="50.0" text="9">
                <opaqueInsets>
                   <Insets bottom="4.0" left="8.0" right="8.0" top="4.0" />
                </opaqueInsets>
@@ -139,7 +139,7 @@
                   <Insets right="15.0" top="12.0" />
                </HBox.margin>
             </ToggleButton>
-            <ToggleButton contentDisplay="CENTER" mnemonicParsing="false" prefHeight="50.0" prefWidth="50.0" text="10">
+            <ToggleButton fx:id="a10" contentDisplay="CENTER" mnemonicParsing="false" onAction="#seat10" prefHeight="50.0" prefWidth="50.0" text="10">
                <opaqueInsets>
                   <Insets />
                </opaqueInsets>
@@ -151,7 +151,7 @@
       </HBox>
       <HBox alignment="TOP_CENTER" layoutX="445.0" layoutY="326.0" prefHeight="78.0" prefWidth="394.0" style="-fx-background-color: gray;">
          <children>
-            <ToggleButton contentDisplay="CENTER" mnemonicParsing="false" prefHeight="50.0" prefWidth="50.0" text="11">
+            <ToggleButton fx:id="a11" contentDisplay="CENTER" mnemonicParsing="false" onAction="#seat11" prefHeight="50.0" prefWidth="50.0" text="11">
                <opaqueInsets>
                   <Insets bottom="4.0" left="8.0" right="8.0" top="4.0" />
                </opaqueInsets>
@@ -159,7 +159,7 @@
                   <Insets right="15.0" top="12.0" />
                </HBox.margin>
             </ToggleButton>
-            <ToggleButton contentDisplay="CENTER" mnemonicParsing="false" prefHeight="50.0" prefWidth="50.0" text="12">
+            <ToggleButton fx:id="a12" contentDisplay="CENTER" mnemonicParsing="false" onAction="#seat12" prefHeight="50.0" prefWidth="50.0" text="12">
                <opaqueInsets>
                   <Insets bottom="4.0" left="8.0" right="8.0" top="4.0" />
                </opaqueInsets>
@@ -167,7 +167,7 @@
                   <Insets right="15.0" top="12.0" />
                </HBox.margin>
             </ToggleButton>
-            <ToggleButton contentDisplay="CENTER" mnemonicParsing="false" prefHeight="50.0" prefWidth="50.0" text="13">
+            <ToggleButton fx:id="a13" contentDisplay="CENTER" mnemonicParsing="false" onAction="#seat13" prefHeight="50.0" prefWidth="50.0" text="13">
                <opaqueInsets>
                   <Insets />
                </opaqueInsets>
@@ -175,7 +175,7 @@
                   <Insets right="15.0" top="12.0" />
                </HBox.margin>
             </ToggleButton>
-            <ToggleButton contentDisplay="CENTER" mnemonicParsing="false" prefHeight="50.0" prefWidth="50.0" text="14">
+            <ToggleButton fx:id="a14" contentDisplay="CENTER" mnemonicParsing="false" onAction="#seat14" prefHeight="50.0" prefWidth="50.0" text="14">
                <opaqueInsets>
                   <Insets bottom="4.0" left="8.0" right="8.0" top="4.0" />
                </opaqueInsets>
@@ -183,7 +183,7 @@
                   <Insets right="15.0" top="12.0" />
                </HBox.margin>
             </ToggleButton>
-            <ToggleButton contentDisplay="CENTER" mnemonicParsing="false" prefHeight="50.0" prefWidth="50.0" text="15">
+            <ToggleButton fx:id="a15" contentDisplay="CENTER" mnemonicParsing="false" onAction="#seat15" prefHeight="50.0" prefWidth="50.0" text="15">
                <opaqueInsets>
                   <Insets />
                </opaqueInsets>
