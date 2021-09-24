@@ -142,5 +142,10 @@
             </Button>
          </children>
       </HBox>
+      <Button fx:id="preBtn" layoutX="13.0" layoutY="14.0" mnemonicParsing="false" onAction="#preBtn" prefHeight="36.0" prefWidth="106.0" text="이전으로">
+         <font>
+            <Font size="19.0" />
+         </font>
+      </Button>
    </children>
 </AnchorPane>

@@ -106,6 +106,23 @@ public class plusInfo_Controller implements Initializable{
 			e.printStackTrace();
 		}
 	}
+	public void preBtn() {
+		try {
+			Stage primaryStage = new Stage();
+			FXMLLoader loader = 
+					new FXMLLoader(getClass().getResource("/movie/plusInfo/MovieInfo.fxml")); 
+			Parent root = loader.load();
+			Scene scene = new Scene(root);
+			MovieInfoController ctl = loader.getController();
+			ctl.setRoot(root);
+			primaryStage.setScene(scene);
+			primaryStage.show();
+		} catch (Exception e) {
+			e.printStackTrace();
+		}
+		Stage stage = (Stage)root.getScene().getWindow();
+		stage.close();
+	}
 
 
 	@Override
