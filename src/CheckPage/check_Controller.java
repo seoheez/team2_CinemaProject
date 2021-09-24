@@ -6,7 +6,6 @@ import java.util.ResourceBundle;
 import javafx.fxml.FXML;
 import javafx.fxml.Initializable;
 import javafx.scene.Parent;
-<<<<<<< HEAD
 import javafx.scene.control.Alert;
 import javafx.scene.control.Button;
 import javafx.scene.control.TextField;
@@ -25,7 +24,7 @@ public class check_Controller implements Initializable{
 
 	public void setRoot(Parent root) {
 		this.root = root;
-
+	}
 	Label fxTitle, fxTime, fxPCount, fxSNum, fxDate;
 	public void setRoot(Parent root,String title, String time, String count, String date,String num) {
 		this.root = root;
