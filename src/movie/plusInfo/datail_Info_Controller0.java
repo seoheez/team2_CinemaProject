@@ -17,19 +17,19 @@ import javafx.stage.Stage;
 public class datail_Info_Controller0 implements Initializable{
 	Parent root;
 	PieChart pieChart;
-	BarChart barChart;
 	
 	public void setRoot(Parent root,String[] s) {
 		this.root = root;
 		pieChart = (PieChart)root.lookup("#pieChart");
-		barChart = (BarChart)root.lookup("#barChart");
-		chart(s[3]);
+		chart(s[4]);
 		Label a = (Label)root.lookup("#story");
 		Label b = (Label)root.lookup("#outline");
 		Label c = (Label)root.lookup("#rTime");
+		Label d = (Label)root.lookup("#releaseD");
 		a.setText(s[0]);
 		b.setText(s[1]);
 		c.setText(s[2]);
+		d.setText(s[3]);
 	}
 	
 public void chart(String ss) {
@@ -71,18 +71,6 @@ public void chart(String ss) {
 				new PieChart.Data("남성", gender5[0]),
 				new PieChart.Data("여성", gender5[1])
 				));}
-		
-			
-		XYChart.Series series1 = new XYChart.Series();
-		series1.setName("연령별 예매 분포");
-		series1.setData(FXCollections.observableArrayList(
-					new XYChart.Data("10대",2.30),
-					new XYChart.Data("20대",33.30),
-					new XYChart.Data("30대",33.70),
-					new XYChart.Data("40대",20.30),
-					new XYChart.Data("50대",10.40)
-				));
-		barChart.getData().add(series1);
 	}
 
 	@Override

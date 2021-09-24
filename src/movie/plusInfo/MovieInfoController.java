@@ -54,6 +54,17 @@ public class MovieInfoController implements Initializable{
 		//Zero(outline.get(btn.indexOf(((Button)(view.getSource())).getId())));
 		
 		System.out.println(((Button)(view.getSource())).getId());
+		ArrayList<String>  releaseD = new ArrayList<String>();
+		releaseD.add("2021.09.01");
+		releaseD.add("2021.08.18");
+		releaseD.add("2021.09.15");
+		releaseD.add("2021.07.28");
+		releaseD.add("2021.09.08");
+		releaseD.add("2021.09.01");
+		System.out.println(btn.indexOf(((Button)(view.getSource())).getId()));
+		//Zero(outline.get(btn.indexOf(((Button)(view.getSource())).getId())));
+		
+		System.out.println(((Button)(view.getSource())).getId());
 		ArrayList<String> rTime = new ArrayList<String>();
 		rTime.add("132분");
 		rTime.add("94분");
@@ -63,7 +74,9 @@ public class MovieInfoController implements Initializable{
 		rTime.add("98분");
 		System.out.println(btn.indexOf(((Button)(view.getSource())).getId()));
 		
-		String[] o = {arr.get(btn.indexOf(((Button)(view.getSource())).getId())),outline.get(btn.indexOf(((Button)(view.getSource())).getId())) ,rTime.get(btn.indexOf(((Button)(view.getSource())).getId())),(btn.indexOf(((Button)(view.getSource())).getId()))+""};
+		
+		
+		String[] o = {arr.get(btn.indexOf(((Button)(view.getSource())).getId())),releaseD.get(btn.indexOf(((Button)(view.getSource())).getId())),outline.get(btn.indexOf(((Button)(view.getSource())).getId())) ,rTime.get(btn.indexOf(((Button)(view.getSource())).getId())),(btn.indexOf(((Button)(view.getSource())).getId()))+""};
 		Zero(o);
 	}
 	public void Zero(String[] s){
