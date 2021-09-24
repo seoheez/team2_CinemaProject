@@ -39,7 +39,7 @@ public class MovieInfoController implements Initializable{
 		btn.add("detail5");
 		
 		System.out.println(btn.indexOf(((Button)(view.getSource())).getId()));
-		Zero(arr.get(btn.indexOf(((Button)(view.getSource())).getId())));
+//		Zero(arr.get(btn.indexOf(((Button)(view.getSource())).getId())));
 		
 		
 		System.out.println(((Button)(view.getSource())).getId());
@@ -50,11 +50,37 @@ public class MovieInfoController implements Initializable{
 		outline.add("액션");
 		outline.add("액션");
 		outline.add("범죄");
-//		System.out.println(btn.indexOf(((Button)(view.getSource())).getId()));
-//		Zero(outline.get(btn.indexOf(((Button)(view.getSource())).getId())));
+		System.out.println(btn.indexOf(((Button)(view.getSource())).getId()));
+		//Zero(outline.get(btn.indexOf(((Button)(view.getSource())).getId())));
 		
+		System.out.println(((Button)(view.getSource())).getId());
+		ArrayList<String>  releaseD = new ArrayList<String>();
+		releaseD.add("2021.09.01");
+		releaseD.add("2021.08.18");
+		releaseD.add("2021.09.15");
+		releaseD.add("2021.07.28");
+		releaseD.add("2021.09.08");
+		releaseD.add("2021.09.01");
+		System.out.println(btn.indexOf(((Button)(view.getSource())).getId()));
+		//Zero(outline.get(btn.indexOf(((Button)(view.getSource())).getId())));
+		
+		System.out.println(((Button)(view.getSource())).getId());
+		ArrayList<String> rTime = new ArrayList<String>();
+		rTime.add("132분");
+		rTime.add("94분");
+		rTime.add("99분");
+		rTime.add("121분");
+		rTime.add("115분");
+		rTime.add("98분");
+		System.out.println(btn.indexOf(((Button)(view.getSource())).getId()));
+		
+		
+		
+		String[] o = {arr.get(btn.indexOf(((Button)(view.getSource())).getId())),releaseD.get(btn.indexOf(((Button)(view.getSource())).getId())),outline.get(btn.indexOf(((Button)(view.getSource())).getId())) ,rTime.get(btn.indexOf(((Button)(view.getSource())).getId())),(btn.indexOf(((Button)(view.getSource())).getId()))+""};
+		Zero(o);
 	}
-	public void Zero(String s){
+	public void Zero(String[] s){
+//		System.out.println("111"+s);
 		try {
 			Stage primaryStage = new Stage();
 			FXMLLoader loader = 
@@ -75,110 +101,6 @@ public class MovieInfoController implements Initializable{
 	}
 	
 
-	public void detailView1(){
-		try {
-			Stage primaryStage = new Stage();
-			FXMLLoader loader = 
-					new FXMLLoader(getClass().getResource("/movie/plusInfo/detailInfo1.fxml"));
-			Parent Root = loader.load();
-			Scene scene = new Scene(Root);
-			datail_Info_Controller1 ctl1 = loader.getController();
-			ctl1.setRoot(Root);
-			//Stage stage = (Stage)root.getScene().getWindow();
-			//stage.close();
-			primaryStage.setScene(scene);
-			primaryStage.show();
-
-		} catch (Exception e) {
-			e.printStackTrace();
-		}
-	}
-
-
-
-	public void detailView2(){
-		try {
-			Stage primaryStage = new Stage();
-			FXMLLoader loader = 
-					new FXMLLoader(getClass().getResource("/movie/plusInfo/detailInfo2.fxml"));
-			Parent Root = loader.load();
-			Scene scene = new Scene(Root);
-			datail_Info_Controller2 ctl = loader.getController();
-			ctl.setRoot(Root);
-			//Stage stage = (Stage)root.getScene().getWindow();
-			//stage.close();
-			primaryStage.setScene(scene);
-			primaryStage.show();
-
-		} catch (Exception e) {
-			e.printStackTrace();
-		}
-
-	}
-
-
-	public void detailView3(){
-		try {
-			Stage primaryStage = new Stage();
-			FXMLLoader loader = 
-					new FXMLLoader(getClass().getResource("/movie/plusInfo/detailInfo3.fxml"));
-			Parent Root = loader.load();
-			Scene scene = new Scene(Root);
-			datail_Info_Controller3 ctl = loader.getController();
-			ctl.setRoot(Root);
-			//Stage stage = (Stage)root.getScene().getWindow();
-			//stage.close();
-			primaryStage.setScene(scene);
-			primaryStage.show();
-
-		} catch (Exception e) {
-			e.printStackTrace();
-		}
-
-	}
-
-
-	public void detailView4(){
-		try {
-			Stage primaryStage = new Stage();
-			FXMLLoader loader = 
-					new FXMLLoader(getClass().getResource("/movie/plusInfo/detailInfo4.fxml"));
-			Parent Root = loader.load();
-			Scene scene = new Scene(Root);
-			datail_Info_Controller4 ctl = loader.getController();
-			ctl.setRoot(Root);
-			//Stage stage = (Stage)root.getScene().getWindow();
-			//stage.close();
-			primaryStage.setScene(scene);
-			primaryStage.show();
-
-		} catch (Exception e) {
-			e.printStackTrace();
-		}
-
-	}
-
-
-	public void detailView5(){
-		try {
-			Stage primaryStage = new Stage();
-			FXMLLoader loader = 
-					new FXMLLoader(getClass().getResource("/movie/plusInfo/detailInfo5.fxml"));
-			Parent Root = loader.load();
-			Scene scene = new Scene(Root);
-			datail_Info_Controller5 ctl = loader.getController();
-			ctl.setRoot(Root);
-			//Stage stage = (Stage)root.getScene().getWindow();
-			//stage.close();
-			primaryStage.setScene(scene);
-			primaryStage.show();
-
-		} catch (Exception e) {
-			e.printStackTrace();
-		}
-	}
-
-
 	public void reserveBtn(){
 		try {
 			Stage primaryStage = new Stage();
@@ -188,8 +110,8 @@ public class MovieInfoController implements Initializable{
 			Scene scene = new Scene(Root);
 			plusInfo_Controller ctl = loader.getController();
 			ctl.setRoot(Root);
-			//Stage stage = (Stage)root.getScene().getWindow();
-			//stage.close();
+			Stage stage = (Stage)root.getScene().getWindow();
+			stage.close();
 			primaryStage.setScene(scene);
 			primaryStage.show();
 
