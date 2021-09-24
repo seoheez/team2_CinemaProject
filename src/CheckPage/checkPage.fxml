@@ -54,10 +54,10 @@
             <Font size="24.0" />
          </font>
       </Label>
-      <Label layoutX="179.0" layoutY="153.0" prefHeight="29.0" prefWidth="150.0" style="-fx-background-color: gray;" />
-      <Label layoutX="179.0" layoutY="211.0" prefHeight="29.0" prefWidth="150.0" style="-fx-background-color: gray;" />
-      <Label layoutX="179.0" layoutY="271.0" prefHeight="29.0" prefWidth="150.0" style="-fx-background-color: gray;" />
-      <Label layoutX="179.0" layoutY="330.0" prefHeight="29.0" prefWidth="150.0" style="-fx-background-color: gray;" />
-      <Label layoutX="179.0" layoutY="391.0" prefHeight="29.0" prefWidth="150.0" style="-fx-background-color: gray;" />
+      <Label fx:id="fxTitle" layoutX="179.0" layoutY="152.0" prefHeight="29.0" prefWidth="150.0" style="-fx-background-color: gray;" />
+      <Label fx:id="fxDate" layoutX="179.0" layoutY="211.0" prefHeight="29.0" prefWidth="150.0" style="-fx-background-color: gray;" />
+      <Label fx:id="fxTime" layoutX="179.0" layoutY="271.0" prefHeight="29.0" prefWidth="150.0" style="-fx-background-color: gray;" />
+      <Label fx:id="fxPCount" layoutX="179.0" layoutY="330.0" prefHeight="29.0" prefWidth="150.0" style="-fx-background-color: gray;" />
+      <Label fx:id="fxSNum" layoutX="179.0" layoutY="391.0" prefHeight="29.0" prefWidth="150.0" style="-fx-background-color: gray;" />
    </children>
 </AnchorPane>

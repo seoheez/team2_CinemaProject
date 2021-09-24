@@ -21,7 +21,7 @@
       </ImageView>
       <ListView fx:id="fxListView" layoutX="25.0" layoutY="70.0" prefHeight="194.0" prefWidth="214.0" style="-fx-background-color: transparent;" />
       <ImageView fx:id="fxImageView" fitHeight="204.0" fitWidth="147.0" layoutX="273.0" layoutY="60.0" pickOnBounds="true" preserveRatio="true" />
-      <DatePicker layoutX="39.0" layoutY="322.0" />
+      <DatePicker fx:id="fxDate" layoutX="39.0" layoutY="322.0" />
       <ComboBox fx:id="cmbTitle" layoutX="39.0" layoutY="389.0" prefHeight="14.0" prefWidth="187.0" />
       <ComboBox fx:id="cmbTime" layoutX="39.0" layoutY="458.0" prefHeight="14.0" prefWidth="187.0" />
       <ComboBox fx:id="cmbCount" layoutX="39.0" layoutY="526.0" prefHeight="14.0" prefWidth="187.0" />
@@ -57,27 +57,27 @@
       </Label>
       <HBox alignment="TOP_CENTER" layoutX="445.0" layoutY="136.0" prefHeight="78.0" prefWidth="394.0" style="-fx-background-color: gray;">
          <children>
-            <Button alignment="CENTER" mnemonicParsing="false" prefHeight="50.0" prefWidth="50.0" text="1" textAlignment="RIGHT">
+            <Button alignment="CENTER" mnemonicParsing="false" onAction="#setNum" prefHeight="50.0" prefWidth="50.0" text="1" textAlignment="RIGHT">
                <HBox.margin>
                   <Insets right="15.0" top="12.0" />
                </HBox.margin>
             </Button>
-            <Button alignment="CENTER" mnemonicParsing="false" prefHeight="50.0" prefWidth="50.0" text="2" textAlignment="RIGHT">
+            <Button alignment="CENTER" mnemonicParsing="false" onAction="#setNum" prefHeight="50.0" prefWidth="50.0" text="2" textAlignment="RIGHT">
                <HBox.margin>
                   <Insets right="15.0" top="12.0" />
                </HBox.margin>
             </Button>
-            <Button alignment="CENTER" mnemonicParsing="false" prefHeight="50.0" prefWidth="50.0" text="3" textAlignment="RIGHT">
+            <Button alignment="CENTER" mnemonicParsing="false" onAction="#setNum" prefHeight="50.0" prefWidth="50.0" text="3" textAlignment="RIGHT">
                <HBox.margin>
                   <Insets right="15.0" top="12.0" />
                </HBox.margin>
             </Button>
-            <Button alignment="CENTER" mnemonicParsing="false" prefHeight="50.0" prefWidth="50.0" text="4" textAlignment="RIGHT">
+            <Button alignment="CENTER" mnemonicParsing="false" onAction="#setNum" prefHeight="50.0" prefWidth="50.0" text="4" textAlignment="RIGHT">
                <HBox.margin>
                   <Insets right="15.0" top="12.0" />
                </HBox.margin>
             </Button>
-            <Button alignment="CENTER" mnemonicParsing="false" prefHeight="50.0" prefWidth="50.0" text="5" textAlignment="RIGHT">
+            <Button alignment="CENTER" mnemonicParsing="false" onAction="#setNum" prefHeight="50.0" prefWidth="50.0" text="5" textAlignment="RIGHT">
                <HBox.margin>
                   <Insets right="15.0" top="12.0" />
                </HBox.margin>
@@ -86,27 +86,27 @@
       </HBox>
       <HBox alignment="TOP_CENTER" layoutX="445.0" layoutY="227.0" prefHeight="78.0" prefWidth="394.0" style="-fx-background-color: gray;">
          <children>
-            <Button alignment="CENTER" mnemonicParsing="false" prefHeight="50.0" prefWidth="50.0" text="6" textAlignment="RIGHT">
+            <Button alignment="CENTER" mnemonicParsing="false" onAction="#setNum" prefHeight="50.0" prefWidth="50.0" text="6" textAlignment="RIGHT">
                <HBox.margin>
                   <Insets right="15.0" top="12.0" />
                </HBox.margin>
             </Button>
-            <Button alignment="CENTER" mnemonicParsing="false" prefHeight="50.0" prefWidth="50.0" text="7" textAlignment="RIGHT">
+            <Button alignment="CENTER" mnemonicParsing="false" onAction="#setNum" prefHeight="50.0" prefWidth="50.0" text="7" textAlignment="RIGHT">
                <HBox.margin>
                   <Insets right="15.0" top="12.0" />
                </HBox.margin>
             </Button>
-            <Button alignment="CENTER" mnemonicParsing="false" prefHeight="50.0" prefWidth="50.0" text="8" textAlignment="RIGHT">
+            <Button alignment="CENTER" mnemonicParsing="false" onAction="#setNum" prefHeight="50.0" prefWidth="50.0" text="8" textAlignment="RIGHT">
                <HBox.margin>
                   <Insets right="15.0" top="12.0" />
                </HBox.margin>
             </Button>
-            <Button alignment="CENTER" mnemonicParsing="false" prefHeight="50.0" prefWidth="50.0" text="9" textAlignment="RIGHT">
+            <Button alignment="CENTER" mnemonicParsing="false" onAction="#setNum" prefHeight="50.0" prefWidth="50.0" text="9" textAlignment="RIGHT">
                <HBox.margin>
                   <Insets right="15.0" top="12.0" />
                </HBox.margin>
             </Button>
-            <Button alignment="CENTER" mnemonicParsing="false" prefHeight="50.0" prefWidth="50.0" text="10" textAlignment="RIGHT">
+            <Button alignment="CENTER" mnemonicParsing="false" onAction="#setNum" prefHeight="50.0" prefWidth="50.0" text="10" textAlignment="RIGHT">
                <HBox.margin>
                   <Insets right="15.0" top="12.0" />
                </HBox.margin>
@@ -115,27 +115,27 @@
       </HBox>
       <HBox alignment="TOP_CENTER" layoutX="445.0" layoutY="316.0" prefHeight="78.0" prefWidth="394.0" style="-fx-background-color: gray;">
          <children>
-            <Button alignment="CENTER" mnemonicParsing="false" prefHeight="50.0" prefWidth="50.0" text="11" textAlignment="RIGHT">
+            <Button alignment="CENTER" mnemonicParsing="false" onAction="#setNum" prefHeight="50.0" prefWidth="50.0" text="11" textAlignment="RIGHT">
                <HBox.margin>
                   <Insets right="15.0" top="12.0" />
                </HBox.margin>
             </Button>
-            <Button alignment="CENTER" mnemonicParsing="false" prefHeight="50.0" prefWidth="50.0" text="12" textAlignment="RIGHT">
+            <Button alignment="CENTER" mnemonicParsing="false" onAction="#setNum" prefHeight="50.0" prefWidth="50.0" text="12" textAlignment="RIGHT">
                <HBox.margin>
                   <Insets right="15.0" top="12.0" />
                </HBox.margin>
             </Button>
-            <Button alignment="CENTER" mnemonicParsing="false" prefHeight="50.0" prefWidth="50.0" text="13" textAlignment="RIGHT">
+            <Button alignment="CENTER" mnemonicParsing="false" onAction="#setNum" prefHeight="50.0" prefWidth="50.0" text="13" textAlignment="RIGHT">
                <HBox.margin>
                   <Insets right="15.0" top="12.0" />
                </HBox.margin>
             </Button>
-            <Button alignment="CENTER" mnemonicParsing="false" prefHeight="50.0" prefWidth="50.0" text="14" textAlignment="RIGHT">
+            <Button alignment="CENTER" mnemonicParsing="false" onAction="#setNum" prefHeight="50.0" prefWidth="50.0" text="14" textAlignment="RIGHT">
                <HBox.margin>
                   <Insets right="15.0" top="12.0" />
                </HBox.margin>
             </Button>
-            <Button alignment="CENTER" mnemonicParsing="false" prefHeight="50.0" prefWidth="50.0" text="15" textAlignment="RIGHT">
+            <Button alignment="CENTER" mnemonicParsing="false" onAction="#setNum" prefHeight="50.0" prefWidth="50.0" text="15" textAlignment="RIGHT">
                <HBox.margin>
                   <Insets right="15.0" top="12.0" />
                </HBox.margin>
