@@ -110,8 +110,8 @@ public class MovieInfoController implements Initializable{
 			Scene scene = new Scene(Root);
 			plusInfo_Controller ctl = loader.getController();
 			ctl.setRoot(Root);
-			//Stage stage = (Stage)root.getScene().getWindow();
-			//stage.close();
+			Stage stage = (Stage)root.getScene().getWindow();
+			stage.close();
 			primaryStage.setScene(scene);
 			primaryStage.show();
 
