@@ -44,12 +44,12 @@
             <Font size="24.0" />
          </font>
       </Label>
-      <Label layoutX="40.0" layoutY="381.0" prefHeight="50.0" prefWidth="98.0" text="좌석" textFill="WHITE">
+      <Label layoutX="40.0" layoutY="381.0" prefHeight="50.0" prefWidth="98.0" text="날짜" textFill="WHITE">
          <font>
             <Font size="24.0" />
          </font>
       </Label>
-      <Label layoutX="40.0" layoutY="201.0" prefHeight="50.0" prefWidth="98.0" text="날짜" textFill="WHITE">
+      <Label layoutX="40.0" layoutY="201.0" prefHeight="50.0" prefWidth="98.0" text="좌석" textFill="WHITE">
          <font>
             <Font size="24.0" />
          </font>
