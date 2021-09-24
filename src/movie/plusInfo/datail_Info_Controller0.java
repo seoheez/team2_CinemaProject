@@ -73,12 +73,13 @@ public class datail_Info_Controller0 implements Initializable{
 				new PieChart.Data("여성", gender5[1])
 				));}
 	}
+	
 	public void detailCancel() {
+		System.out.println("화면을 닫겠습니다");
 		CommonService cs = new CommonServiceImpl();
 		cs.setRoot(root);
 		cs.windowClose();
 	}
-
 	@Override
 	public void initialize(URL arg0, ResourceBundle arg1) {
 
