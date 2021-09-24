@@ -7,7 +7,6 @@ import java.util.ResourceBundle;
 import CheckPage.check_Controller;
 import javafx.collections.FXCollections;
 import javafx.collections.ObservableList;
-import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
 import javafx.fxml.Initializable;
@@ -15,11 +14,11 @@ import javafx.scene.Parent;
 import javafx.scene.Scene;
 import javafx.scene.control.Button;
 import javafx.scene.control.ComboBox;
-import javafx.scene.control.DatePicker;
 import javafx.scene.control.Label;
 import javafx.scene.control.ListView;
 import javafx.scene.control.TextArea;
 import javafx.scene.control.TextField;
+import javafx.scene.control.ToggleButton;
 import javafx.scene.image.Image;
 import javafx.scene.image.ImageView;
 import javafx.stage.Stage;
@@ -33,13 +32,8 @@ public class plusInfo_Controller implements Initializable{
 	ImageView fxImageView;
 	ObservableList<String> movieTitle;
 	ArrayList<String> url;
+	ToggleButton a1,a2,a3,a4,a5,a6,a7,a8,a9,a10,a11,a12,a13,a14,a15;
 	
-	ComboBox<String> cmbTitle;
-	ComboBox<String> cmbTime;
-	ComboBox<String> cmbCount;
-	DatePicker fxDate;
-	
-	String num;
 	public void setRoot(Parent root) {
 		this.root = root;
 		addComboTitle();
@@ -47,16 +41,32 @@ public class plusInfo_Controller implements Initializable{
 		addComboCount();
 		fxListView = (ListView)root.lookup("#fxListView");
 		fxImageView = (ImageView)root.lookup("#fxImageView");
-		
-		fxDate=(DatePicker)root.lookup("#fxDate");
-		
 		setListView();
+		
+		/*
+		a1 = (ToggleButton)root.lookup("#a1");
+		a2 = (ToggleButton)root.lookup("#a2");
+		a3 = (ToggleButton)root.lookup("#a3");
+		a4 = (ToggleButton)root.lookup("#a4");
+		a5 = (ToggleButton)root.lookup("#a5");
+		a6 = (ToggleButton)root.lookup("#a6");
+		a7 = (ToggleButton)root.lookup("#a7");
+		a8 = (ToggleButton)root.lookup("#a8");
+		a9 = (ToggleButton)root.lookup("#a9");
+		a10 = (ToggleButton)root.lookup("#a10");
+		a11 = (ToggleButton)root.lookup("#a11");
+		a12 = (ToggleButton)root.lookup("#a12");
+		a13 = (ToggleButton)root.lookup("#a13");
+		a14 = (ToggleButton)root.lookup("#a14");
+		a15 = (ToggleButton)root.lookup("#a15");
+		*/
+		
 	}
 
 
 	public void addComboTitle() {
 		// TODO Auto-generated method stub
-		 cmbTitle = (ComboBox<String>)root.lookup("#cmbTitle");
+		ComboBox<String> cmbTitle = (ComboBox<String>)root.lookup("#cmbTitle");
 		if(cmbTitle != null) {
 			cmbTitle.getItems().addAll("샹치", "인질", "포켓몬스터", "모가디슈", "건파우더 밀크쉐이크", "맨인 더 다크2");
 		}
@@ -64,19 +74,19 @@ public class plusInfo_Controller implements Initializable{
 	}
 	public void addComboTime() {
 		// TODO Auto-generated method stub
-		cmbTime = (ComboBox<String>)root.lookup("#cmbTime");
+		ComboBox<String> cmbTime = (ComboBox<String>)root.lookup("#cmbTime");
 		if(cmbTime != null) {
 			cmbTime.getItems().addAll("Am 10:00", "Pm 1:00", "Pm 4:00");
 		}
 		
-		
 	}
 	public void addComboCount() {
 		// TODO Auto-generated method stub
-		cmbCount = (ComboBox<String>)root.lookup("#cmbCount");
+		ComboBox<String> cmbCount = (ComboBox<String>)root.lookup("#cmbCount");
 		if(cmbCount != null) {
 			cmbCount.getItems().addAll("1", "2", "3", "4", "5");
 		}
+		
 	}
 
 
@@ -102,16 +112,11 @@ public class plusInfo_Controller implements Initializable{
 
 			url.add("movie"+ i + ".jpg");
 		}
+
 		fxListView.setItems(movieTitle);
 	}
 
 	public void InfoBtn() {
-		System.out.println(cmbTitle.getValue());
-		System.out.println(cmbTime.getValue());
-		System.out.println(cmbCount.getValue());
-		System.out.println(fxDate.getValue());
-		
-		
 		try {
 			Stage primaryStage = new Stage();
 			FXMLLoader loader = 
@@ -119,7 +124,7 @@ public class plusInfo_Controller implements Initializable{
 			Parent root = loader.load();
 			Scene scene = new Scene(root);
 			check_Controller ctl = loader.getController();
-			ctl.setRoot(root,cmbTitle.getValue(),cmbTime.getValue(),cmbCount.getValue(),fxDate.getValue().toString(),num);
+			ctl.setRoot(root);
 			primaryStage.setScene(scene);
 			primaryStage.show();
 		} catch (Exception e) {
@@ -147,15 +152,14 @@ public class plusInfo_Controller implements Initializable{
 		stage.close();
 	}
 	
+	
+	
+	
 
 
 	@Override
 	public void initialize(URL arg0, ResourceBundle arg1) {	
 
-	}
-	public void setNum(ActionEvent e) {
-		System.out.println( ((Button)e.getSource()).getText() );
-		num = ((Button)e.getSource()).getText();
 	}
 }
 
