@@ -8,5 +8,9 @@
 	</classpathentry>
 	<classpathentry kind="con" path="org.eclipse.jdt.USER_LIBRARY/JavaFx"/>
 	<classpathentry kind="lib" path="C:/ojdbc6.jar"/>
+<<<<<<< HEAD
+=======
+	<classpathentry kind="con" path="org.eclipse.jdt.USER_LIBRARY/JavaFx"/>
+>>>>>>> master
 	<classpathentry kind="output" path="bin"/>
 </classpath>

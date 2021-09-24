@@ -12,11 +12,13 @@ import javafx.fxml.FXMLLoader;
 import javafx.fxml.Initializable;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
+import javafx.scene.control.Button;
 import javafx.scene.control.ComboBox;
 import javafx.scene.control.Label;
 import javafx.scene.control.ListView;
 import javafx.scene.control.TextArea;
 import javafx.scene.control.TextField;
+import javafx.scene.control.ToggleButton;
 import javafx.scene.image.Image;
 import javafx.scene.image.ImageView;
 import javafx.stage.Stage;
@@ -30,6 +32,8 @@ public class plusInfo_Controller implements Initializable{
 	ImageView fxImageView;
 	ObservableList<String> movieTitle;
 	ArrayList<String> url;
+	ToggleButton a1,a2,a3,a4,a5,a6,a7,a8,a9,a10,a11,a12,a13,a14,a15;
+	
 	public void setRoot(Parent root) {
 		this.root = root;
 		addComboTitle();
@@ -38,6 +42,25 @@ public class plusInfo_Controller implements Initializable{
 		fxListView = (ListView)root.lookup("#fxListView");
 		fxImageView = (ImageView)root.lookup("#fxImageView");
 		setListView();
+		
+		/*
+		a1 = (ToggleButton)root.lookup("#a1");
+		a2 = (ToggleButton)root.lookup("#a2");
+		a3 = (ToggleButton)root.lookup("#a3");
+		a4 = (ToggleButton)root.lookup("#a4");
+		a5 = (ToggleButton)root.lookup("#a5");
+		a6 = (ToggleButton)root.lookup("#a6");
+		a7 = (ToggleButton)root.lookup("#a7");
+		a8 = (ToggleButton)root.lookup("#a8");
+		a9 = (ToggleButton)root.lookup("#a9");
+		a10 = (ToggleButton)root.lookup("#a10");
+		a11 = (ToggleButton)root.lookup("#a11");
+		a12 = (ToggleButton)root.lookup("#a12");
+		a13 = (ToggleButton)root.lookup("#a13");
+		a14 = (ToggleButton)root.lookup("#a14");
+		a15 = (ToggleButton)root.lookup("#a15");
+		*/
+		
 	}
 
 
@@ -128,6 +151,9 @@ public class plusInfo_Controller implements Initializable{
 		Stage stage = (Stage)root.getScene().getWindow();
 		stage.close();
 	}
+	
+	
+	
 	
 
 
