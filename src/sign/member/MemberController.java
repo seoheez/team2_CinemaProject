@@ -31,7 +31,6 @@ public class MemberController implements Initializable{
 		ms.membershipProc();
 	}
 	public void memberCancle() {
-		System.out.println("취소 클릭");
 		ms.memberCancle();
 	}
 }

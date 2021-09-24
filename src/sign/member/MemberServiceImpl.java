@@ -46,11 +46,6 @@ public class MemberServiceImpl implements MemberService{
 		alert.setContentText(msg);
 		alert.show();
 	}
-	public boolean getGender() {
-		RadioButton rdoMan = (RadioButton)root.lookup("#rdoMan");
-		if( rdoMan.isSelected() ) return true;
-		else return false;
-	}
 	@Override
 	public void membershipProc() {
 		MemberDTO dto = new MemberDTO();
@@ -58,7 +53,6 @@ public class MemberServiceImpl implements MemberService{
 		check();
 
 		dto.setName( ((TextField)root.lookup("#fxName")).getText() );
-		dto.setGender( getGender() );
 
 		System.out.println( dto.getName() );
 	}
