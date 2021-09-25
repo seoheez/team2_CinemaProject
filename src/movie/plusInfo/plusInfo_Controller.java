@@ -110,10 +110,7 @@ public class plusInfo_Controller implements Initializable{
 	}
 
 	public void InfoBtn() {
-		/*cmbTitle = null;
-		cmbTime = null;
-		cmbCount = null;
-		fxDate = null;*/
+
 		
 		if(cmbTitle.getValue() == null || cmbTime.getValue() == null || cmbCount.getValue() == null || fxDate.getValue()== null) {
 			
@@ -147,35 +144,7 @@ public class plusInfo_Controller implements Initializable{
 		//cs.setRoot(root);
 		//cs.windowClose();
 	}
-	/*
-	public void check1() {
-		DatePicker fxDate = (DatePicker)root.lookup("#fxDate");
-		ComboBox cmbTitle = (ComboBox)root.lookup("#cmbTitle");
-		ComboBox cmbTime = (ComboBox)root.lookup("#cmbTime");
-		ComboBox cmbCount = (ComboBox)root.lookup("#cmbCount");
-		if(fxDate.getValue(){
-			alertMethod("날짜를 선택하세요!");
-			fxDate.requestFocus();
-		}
-		else if(cmbTitle.getValue()) {
-			alertMethod("영화를 선택하세요!");
-		}
-		else if(cmbTime.getValue()) {
-			alertMethod("상영시간을 선택하세요!");
-		}
-		else if(cmbCount.getValue()) {
-			alertMethod("인원을 선택하세요!");
-		}
-		
-	}
-
-
-	public void alertMethod(String msg) {
-		Alert alert =new Alert(AlertType.INFORMATION);
-		alert.setContentText(msg);
-		alert.show();
-	}
-*/
+	
 	
 	public void preBtn() {
 		try {
