@@ -4,12 +4,16 @@ import java.net.URL;
 import java.util.ResourceBundle;
 
 import javafx.fxml.FXML;
+import javafx.fxml.FXMLLoader;
 import javafx.fxml.Initializable;
 import javafx.scene.Parent;
+import javafx.scene.Scene;
 import javafx.scene.control.Alert;
 import javafx.scene.control.Button;
 import javafx.scene.control.TextField;
 import javafx.scene.control.Alert.AlertType;
+import javafx.stage.Stage;
+import movie.plusInfo.MovieInfoController;
 import sign.common.CommonService;
 import sign.common.CommonServiceImpl;
 import javafx.scene.control.Label;
@@ -54,6 +58,23 @@ public class check_Controller implements Initializable{
 		cs.windowClose();
 	}
 
+	public void preBtn() {
+		try {
+			Stage primaryStage = new Stage();
+			FXMLLoader loader = 
+					new FXMLLoader(getClass().getResource("/movie/plusInfo/plusinfo.fxml")); 
+			Parent root = loader.load();
+			Scene scene = new Scene(root);
+			MovieInfoController ctl = loader.getController();
+			ctl.setRoot(root);
+			primaryStage.setScene(scene);
+			primaryStage.show();
+		} catch (Exception e) {
+			e.printStackTrace();
+		}
+		Stage stage = (Stage)root.getScene().getWindow();
+		stage.close();
+	}
 
 
 }
