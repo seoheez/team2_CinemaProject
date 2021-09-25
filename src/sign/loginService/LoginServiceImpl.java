@@ -4,7 +4,6 @@ import javafx.scene.Parent;
 import javafx.scene.control.Alert;
 import javafx.scene.control.PasswordField;
 import javafx.scene.control.TextField;
-import loginDto.LoginDto;
 import javafx.scene.control.Alert.AlertType;
 import sign.common.CommonService;
 import sign.common.CommonServiceImpl;
@@ -16,11 +15,6 @@ public class LoginServiceImpl implements LoginService{
 		this.root = root;
 	}
 		
-	public void alertMethod(String msg) {
-		Alert alert =new Alert(AlertType.INFORMATION);
-		alert.setContentText(msg);
-		alert.show();
-		}
 	@Override
 	public void loginClose() {
 		System.out.println("화면을 닫겠습니다");
@@ -29,8 +23,14 @@ public class LoginServiceImpl implements LoginService{
 		cs.windowClose();
 	}
 
+	public void alertMethod(String msg) {
+		Alert alert =new Alert(AlertType.INFORMATION);
+		alert.setContentText(msg);
+		alert.show();
+		}
+
 	@Override
-	public void loginCheck() {
+	public void loginCheck(Parent root) {
 		// TODO Auto-generated method stub
 		
 	}

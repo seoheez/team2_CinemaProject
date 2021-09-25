@@ -17,7 +17,7 @@
             <Image url="@../img/pop.jpg" />
          </image>
          <effect>
-            <Lighting diffuseConstant="0.35" specularConstant="0.21" surfaceScale="9.25">
+            <Lighting diffuseConstant="0.35" specularConstant="0.21" specularExponent="22.99" surfaceScale="9.06">
                <bumpInput>
                   <MotionBlur />
                </bumpInput>
@@ -45,17 +45,17 @@
             <Font size="24.0" />
          </font>
       </Label>
-      <Label layoutX="40.0" layoutY="381.0" prefHeight="50.0" prefWidth="98.0" text="좌석" textFill="WHITE">
+      <Label layoutX="40.0" layoutY="381.0" prefHeight="50.0" prefWidth="98.0" text="날짜" textFill="WHITE">
          <font>
             <Font size="24.0" />
          </font>
       </Label>
-      <Label layoutX="40.0" layoutY="201.0" prefHeight="50.0" prefWidth="98.0" text="날짜" textFill="WHITE">
+      <Label layoutX="40.0" layoutY="201.0" prefHeight="50.0" prefWidth="98.0" text="좌석" textFill="WHITE">
          <font>
             <Font size="24.0" />
          </font>
       </Label>
-      <Label layoutX="179.0" layoutY="153.0" prefHeight="29.0" prefWidth="150.0" style="-fx-background-color: gray;" />
+      <Label layoutX="179.0" layoutY="153.0" prefHeight="29.0" prefWidth="150.0" style="-fx-background-color: #c7a4a4;" />
       <Label layoutX="179.0" layoutY="211.0" prefHeight="29.0" prefWidth="150.0" style="-fx-background-color: gray;" />
       <Label layoutX="179.0" layoutY="271.0" prefHeight="29.0" prefWidth="150.0" style="-fx-background-color: gray;" />
       <Label layoutX="179.0" layoutY="330.0" prefHeight="29.0" prefWidth="150.0" style="-fx-background-color: gray;" />
@@ -70,5 +70,25 @@
             <Font size="16.0" />
          </font>
       </Button>
+      <Label fx:id="fxTitle" layoutX="179.0" layoutY="152.0" prefHeight="29.0" prefWidth="150.0" style="-fx-background-color: #bdb7b7;">
+         <font>
+            <Font size="22.0" />
+         </font></Label>
+      <Label fx:id="fxDate" layoutX="179.0" layoutY="211.0" prefHeight="29.0" prefWidth="150.0" style="-fx-background-color: #bdb7b7;">
+         <font>
+            <Font size="18.0" />
+         </font></Label>
+      <Label fx:id="fxTime" layoutX="179.0" layoutY="271.0" prefHeight="29.0" prefWidth="150.0" style="-fx-background-color: #bdb7b7;">
+         <font>
+            <Font size="18.0" />
+         </font></Label>
+      <Label fx:id="fxPCount" layoutX="179.0" layoutY="330.0" prefHeight="29.0" prefWidth="150.0" style="-fx-background-color: #bdb7b7;">
+         <font>
+            <Font size="18.0" />
+         </font></Label>
+      <Label fx:id="fxSNum" layoutX="179.0" layoutY="391.0" prefHeight="29.0" prefWidth="150.0" style="-fx-background-color: #bdb7b7;">
+         <font>
+            <Font size="18.0" />
+         </font></Label>
    </children>
 </AnchorPane>

@@ -15,20 +15,22 @@ import javafx.scene.image.Image;
 import javafx.scene.image.ImageView;
 import javafx.stage.Stage;
 import movie.plusInfo.MovieInfoController;
+import sign.loginService.LoginDB;
 import sign.loginService.LoginService;
 import sign.loginService.LoginServiceImpl;
 import sign.member.MemberProc;
+import sign.member_dto.MemberDTO;
 
 public class Controller implements Initializable{
 	@FXML
 	ImageView myImageView; 
 	Image myImage = new Image(getClass().getResourceAsStream("/img/movie.jpg"));
-
 	
 	Parent root;
+	DB db;
 	MemberProc mp;
 	LoginService ls;
-
+	
 	public void setRoot(Parent root) {
 		this.root = root;
 		ls.setRoot(root);
@@ -37,6 +39,7 @@ public class Controller implements Initializable{
 	public void btnOk() {
 		TextField id = (TextField)root.lookup("#fxId");
 		TextField pwd = (TextField)root.lookup("#fxPwd");
+		
 		if(id.getText().isEmpty()) {
 			alertMethod("아이디는 필수 항목입니다");
 			id.requestFocus();
@@ -44,6 +47,21 @@ public class Controller implements Initializable{
 		}
 		else if(pwd.getText().isEmpty()) {
 			alertMethod("비번은 필수 항목입니다");
+			return;
+		}
+		
+		db = new DB();
+		MemberDTO dto = db.loginCheck(id.getText() );
+		
+		if(dto == null) {
+			alertMethod("아이디가 존재하지 않습니다.");
+			return;
+		}
+		
+		if(dto.getPw().equals(pwd.getText())) {
+			System.out.println("환영합니다.~~~ " + dto.getName());
+		}else {
+			alertMethod("아이디 혹은 비번이 다릅니다.");
 			return;
 		}
 		
