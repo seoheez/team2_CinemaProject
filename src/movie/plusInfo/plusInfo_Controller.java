@@ -13,6 +13,7 @@ import javafx.fxml.FXMLLoader;
 import javafx.fxml.Initializable;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
+import javafx.scene.control.Alert;
 import javafx.scene.control.Button;
 import javafx.scene.control.ComboBox;
 import javafx.scene.control.DatePicker;
@@ -20,6 +21,7 @@ import javafx.scene.control.Label;
 import javafx.scene.control.ListView;
 import javafx.scene.control.TextArea;
 import javafx.scene.control.TextField;
+import javafx.scene.control.Alert.AlertType;
 import javafx.scene.image.Image;
 import javafx.scene.image.ImageView;
 import javafx.stage.Stage;
@@ -59,7 +61,9 @@ public class plusInfo_Controller implements Initializable{
 		 cmbTitle = (ComboBox<String>)root.lookup("#cmbTitle");
 		if(cmbTitle != null) {
 			cmbTitle.getItems().addAll("샹치", "인질", "포켓몬스터", "모가디슈", "건파우더 밀크쉐이크", "맨인 더 다크2");
+
 		}
+
 		
 	}
 	public void addComboTime() {
@@ -106,11 +110,24 @@ public class plusInfo_Controller implements Initializable{
 	}
 
 	public void InfoBtn() {
+		/*cmbTitle = null;
+		cmbTime = null;
+		cmbCount = null;
+		fxDate = null;*/
+		
+		if(cmbTitle.getValue() == null || cmbTime.getValue() == null || cmbCount.getValue() == null || fxDate.getValue()== null) {
+			
+			Alert alert = new Alert(AlertType.WARNING);
+			alert.setTitle("경고창");
+			alert.setHeaderText("경고!!");
+			alert.setContentText("다음으로 넘어가기 전에 모두 선택하세요!");
+			alert.showAndWait();
+		}
+		
 		System.out.println(cmbTitle.getValue());
 		System.out.println(cmbTime.getValue());
 		System.out.println(cmbCount.getValue());
 		System.out.println(fxDate.getValue());
-		
 		
 		try {
 			Stage primaryStage = new Stage();
@@ -125,10 +142,41 @@ public class plusInfo_Controller implements Initializable{
 		} catch (Exception e) {
 			e.printStackTrace();
 		}
-		CommonService cs = new CommonServiceImpl();
-		cs.setRoot(root);
-		cs.windowClose();
+		
+		//CommonService cs = new CommonServiceImpl();
+		//cs.setRoot(root);
+		//cs.windowClose();
 	}
+	/*
+	public void check1() {
+		DatePicker fxDate = (DatePicker)root.lookup("#fxDate");
+		ComboBox cmbTitle = (ComboBox)root.lookup("#cmbTitle");
+		ComboBox cmbTime = (ComboBox)root.lookup("#cmbTime");
+		ComboBox cmbCount = (ComboBox)root.lookup("#cmbCount");
+		if(fxDate.getValue(){
+			alertMethod("날짜를 선택하세요!");
+			fxDate.requestFocus();
+		}
+		else if(cmbTitle.getValue()) {
+			alertMethod("영화를 선택하세요!");
+		}
+		else if(cmbTime.getValue()) {
+			alertMethod("상영시간을 선택하세요!");
+		}
+		else if(cmbCount.getValue()) {
+			alertMethod("인원을 선택하세요!");
+		}
+		
+	}
+
+
+	public void alertMethod(String msg) {
+		Alert alert =new Alert(AlertType.INFORMATION);
+		alert.setContentText(msg);
+		alert.show();
+	}
+*/
+	
 	public void preBtn() {
 		try {
 			Stage primaryStage = new Stage();
@@ -147,7 +195,6 @@ public class plusInfo_Controller implements Initializable{
 		stage.close();
 	}
 	
-
 
 	@Override
 	public void initialize(URL arg0, ResourceBundle arg1) {	

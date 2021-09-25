@@ -63,27 +63,27 @@
 		</Button>
       <HBox layoutX="441.0" layoutY="137.0" prefHeight="76.0" prefWidth="398.0" style="-fx-background-color: gray;">
          <children>
-            <ToggleButton mnemonicParsing="false" prefHeight="50.0" prefWidth="50.0" text="1">
+            <ToggleButton mnemonicParsing="false" onAction="#seat1" prefHeight="50.0" prefWidth="50.0" text="1">
                <HBox.margin>
                   <Insets bottom="10.0" left="37.0" right="17.0" top="10.0" />
                </HBox.margin>
             </ToggleButton>
-            <ToggleButton mnemonicParsing="false" prefHeight="50.0" prefWidth="50.0" text="2">
+            <ToggleButton mnemonicParsing="false" onAction="#seat2" prefHeight="50.0" prefWidth="50.0" text="2">
                <HBox.margin>
                   <Insets bottom="10.0" right="17.0" top="10.0" />
                </HBox.margin>
             </ToggleButton>
-            <ToggleButton mnemonicParsing="false" prefHeight="50.0" prefWidth="50.0" text="3">
+            <ToggleButton mnemonicParsing="false" onAction="#seat3" prefHeight="50.0" prefWidth="50.0" text="3">
                <HBox.margin>
                   <Insets bottom="10.0" right="17.0" top="10.0" />
                </HBox.margin>
             </ToggleButton>
-            <ToggleButton mnemonicParsing="false" prefHeight="50.0" prefWidth="50.0" text="4">
+            <ToggleButton mnemonicParsing="false" onAction="#seat4" prefHeight="50.0" prefWidth="50.0" text="4">
                <HBox.margin>
                   <Insets bottom="10.0" right="17.0" top="10.0" />
                </HBox.margin>
             </ToggleButton>
-            <ToggleButton mnemonicParsing="false" prefHeight="50.0" prefWidth="50.0" text="5">
+            <ToggleButton mnemonicParsing="false" onAction="#seat5" prefHeight="50.0" prefWidth="50.0" text="5">
                <HBox.margin>
                   <Insets bottom="10.0" right="17.0" top="10.0" />
                </HBox.margin>
@@ -92,27 +92,27 @@
       </HBox>
       <HBox layoutX="441.0" layoutY="225.0" prefHeight="76.0" prefWidth="398.0" style="-fx-background-color: gray;">
          <children>
-            <ToggleButton mnemonicParsing="false" prefHeight="50.0" prefWidth="50.0" text="6">
+            <ToggleButton mnemonicParsing="false" onAction="#seat6" prefHeight="50.0" prefWidth="50.0" text="6">
                <HBox.margin>
                   <Insets bottom="10.0" left="37.0" right="17.0" top="10.0" />
                </HBox.margin>
             </ToggleButton>
-            <ToggleButton mnemonicParsing="false" prefHeight="50.0" prefWidth="50.0" text="7">
+            <ToggleButton mnemonicParsing="false" onAction="#seat7" prefHeight="50.0" prefWidth="50.0" text="7">
                <HBox.margin>
                   <Insets bottom="10.0" right="17.0" top="10.0" />
                </HBox.margin>
             </ToggleButton>
-            <ToggleButton mnemonicParsing="false" prefHeight="50.0" prefWidth="50.0" text="8">
+            <ToggleButton mnemonicParsing="false" onAction="#seat8" prefHeight="50.0" prefWidth="50.0" text="8">
                <HBox.margin>
                   <Insets bottom="10.0" right="17.0" top="10.0" />
                </HBox.margin>
             </ToggleButton>
-            <ToggleButton mnemonicParsing="false" prefHeight="50.0" prefWidth="50.0" text="9">
+            <ToggleButton mnemonicParsing="false" onAction="#seat9" prefHeight="50.0" prefWidth="50.0" text="9">
                <HBox.margin>
                   <Insets bottom="10.0" right="17.0" top="10.0" />
                </HBox.margin>
             </ToggleButton>
-            <ToggleButton mnemonicParsing="false" prefHeight="50.0" prefWidth="50.0" text="10">
+            <ToggleButton mnemonicParsing="false" onAction="#seat10" prefHeight="50.0" prefWidth="50.0" text="10">
                <HBox.margin>
                   <Insets bottom="10.0" right="17.0" top="10.0" />
                </HBox.margin>
@@ -121,27 +121,27 @@
       </HBox>
       <HBox layoutX="441.0" layoutY="312.0" prefHeight="76.0" prefWidth="398.0" style="-fx-background-color: gray;">
          <children>
-            <ToggleButton mnemonicParsing="false" prefHeight="50.0" prefWidth="50.0" text="11">
+            <ToggleButton mnemonicParsing="false" onAction="#seat11" prefHeight="50.0" prefWidth="50.0" text="11">
                <HBox.margin>
                   <Insets bottom="10.0" left="37.0" right="17.0" top="10.0" />
                </HBox.margin>
             </ToggleButton>
-            <ToggleButton mnemonicParsing="false" prefHeight="50.0" prefWidth="50.0" text="12">
+            <ToggleButton mnemonicParsing="false" onAction="#seat12" prefHeight="50.0" prefWidth="50.0" text="12">
                <HBox.margin>
                   <Insets bottom="10.0" right="17.0" top="10.0" />
                </HBox.margin>
             </ToggleButton>
-            <ToggleButton mnemonicParsing="false" prefHeight="50.0" prefWidth="50.0" text="13">
+            <ToggleButton mnemonicParsing="false" onAction="#seat13" prefHeight="50.0" prefWidth="50.0" text="13">
                <HBox.margin>
                   <Insets bottom="10.0" right="17.0" top="10.0" />
                </HBox.margin>
             </ToggleButton>
-            <ToggleButton mnemonicParsing="false" prefHeight="50.0" prefWidth="50.0" text="14">
+            <ToggleButton mnemonicParsing="false" onAction="#seat14" prefHeight="50.0" prefWidth="50.0" text="14">
                <HBox.margin>
                   <Insets bottom="10.0" right="17.0" top="10.0" />
                </HBox.margin>
             </ToggleButton>
-            <ToggleButton mnemonicParsing="false" prefHeight="50.0" prefWidth="50.0" text="15">
+            <ToggleButton mnemonicParsing="false" onAction="#seat15" prefHeight="50.0" prefWidth="50.0" text="15">
                <HBox.margin>
                   <Insets bottom="10.0" right="17.0" top="10.0" />
                </HBox.margin>
