@@ -14,6 +14,7 @@ import javafx.scene.control.TextField;
 import javafx.scene.control.Alert.AlertType;
 import javafx.stage.Stage;
 import movie.plusInfo.MovieInfoController;
+import movie.plusInfo.plusInfo_Controller;
 import sign.common.CommonService;
 import sign.common.CommonServiceImpl;
 import javafx.scene.control.Label;
@@ -53,9 +54,15 @@ public class check_Controller implements Initializable{
 		alert.show();
 	}
 	public void endBtn() {
-		CommonService cs = new CommonServiceImpl();
-		cs.setRoot(root);
-		cs.windowClose();
+		  Boolean answer = checkConfirmBox.display("Title", "정말 종료하시겠습니까?");
+	        if (answer) {
+	            System.out.println("종료합니다.");
+	            Stage stage = (Stage)root.getScene().getWindow();
+	            stage.close();
+
+	        } else {
+	            System.out.println("종료하지 않습니다.");
+	        }
 	}
 
 	public void preBtn() {
@@ -65,15 +72,14 @@ public class check_Controller implements Initializable{
 					new FXMLLoader(getClass().getResource("/movie/plusInfo/plusinfo.fxml")); 
 			Parent root = loader.load();
 			Scene scene = new Scene(root);
-			MovieInfoController ctl = loader.getController();
+			plusInfo_Controller ctl = loader.getController();
 			ctl.setRoot(root);
 			primaryStage.setScene(scene);
 			primaryStage.show();
 		} catch (Exception e) {
 			e.printStackTrace();
 		}
-		Stage stage = (Stage)root.getScene().getWindow();
-		stage.close();
+
 	}
 
 

@@ -139,11 +139,13 @@ public class plusInfo_Controller implements Initializable{
 		} catch (Exception e) {
 			e.printStackTrace();
 		}
-		
-		//CommonService cs = new CommonServiceImpl();
-		//cs.setRoot(root);
-		//cs.windowClose();
+		//Stage stage = (Stage)root.getScene().getWindow();
+		//stage.close();
+		CommonService cs = new CommonServiceImpl();
+		cs.setRoot(root);
+		cs.windowClose();
 	}
+	
 	
 	
 	public void preBtn() {
