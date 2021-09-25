@@ -54,22 +54,22 @@ public class check_Controller implements Initializable{
 		alert.show();
 	}
 	public void endBtn() {
-		  Boolean answer = checkConfirmBox.display("Title", "정말 종료하시겠습니까?");
-	        if (answer) {
-	            System.out.println("종료합니다.");
-	            Stage stage = (Stage)root.getScene().getWindow();
-	            stage.close();
+		Boolean answer = checkConfirmBox.display("Title", "정말 종료하시겠습니까?");
+		if (answer) {
+			System.out.println("종료합니다.");
+			Stage stage = (Stage)root.getScene().getWindow();
+			stage.close();
 
-	        } else {
-	            System.out.println("종료하지 않습니다.");
-	        }
+		} else {
+			System.out.println("종료하지 않습니다.");
+		}
 	}
 
 	public void preBtn() {
 		try {
 			Stage primaryStage = new Stage();
 			FXMLLoader loader = 
-					new FXMLLoader(getClass().getResource("/movie/plusInfo/plusinfo.fxml")); 
+					new FXMLLoader(getClass().getResource("/movie/plusInfo/plusInfo.fxml")); 
 			Parent root = loader.load();
 			Scene scene = new Scene(root);
 			plusInfo_Controller ctl = loader.getController();
@@ -79,7 +79,8 @@ public class check_Controller implements Initializable{
 		} catch (Exception e) {
 			e.printStackTrace();
 		}
-
+		Stage stage = (Stage)root.getScene().getWindow();
+		stage.close();
 	}
 
 

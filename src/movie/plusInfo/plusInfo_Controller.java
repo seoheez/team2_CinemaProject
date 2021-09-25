@@ -119,14 +119,8 @@ public class plusInfo_Controller implements Initializable{
 			alert.setHeaderText("경고!!");
 			alert.setContentText("다음으로 넘어가기 전에 모두 선택하세요!");
 			alert.showAndWait();
-		}
-		
-		System.out.println(cmbTitle.getValue());
-		System.out.println(cmbTime.getValue());
-		System.out.println(cmbCount.getValue());
-		System.out.println(fxDate.getValue());
-		
-		try {
+		}else {
+			try {
 			Stage primaryStage = new Stage();
 			FXMLLoader loader = 
 					new FXMLLoader(getClass().getResource("/CheckPage/checkPage.fxml")); 
@@ -139,11 +133,15 @@ public class plusInfo_Controller implements Initializable{
 		} catch (Exception e) {
 			e.printStackTrace();
 		}
-		//Stage stage = (Stage)root.getScene().getWindow();
-		//stage.close();
-		CommonService cs = new CommonServiceImpl();
-		cs.setRoot(root);
-		cs.windowClose();
+			Stage stage = (Stage)root.getScene().getWindow();
+			stage.close();
+		}
+		
+		System.out.println(cmbTitle.getValue());
+		System.out.println(cmbTime.getValue());
+		System.out.println(cmbCount.getValue());
+		System.out.println(fxDate.getValue());
+		
 	}
 	
 	
