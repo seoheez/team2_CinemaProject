@@ -17,7 +17,6 @@ public class plusInfo extends Application {
 		Scene scene = new Scene(root);
 		plusInfo_Controller ctl = loader.getController();
 		ctl.setRoot(root);
-		primaryStage.setTitle("Movie Reservation");
 		primaryStage.setScene(scene);
 		primaryStage.show();
 	}

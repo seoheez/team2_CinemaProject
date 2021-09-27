@@ -18,10 +18,8 @@ public class MovieInfo extends Application {
 		Scene scene = new Scene(root);
 		MovieInfoController ctl = loader.getController();
 		ctl.setRoot(root);
-		primaryStage.setTitle("Movie Reservation");
 		primaryStage.setScene(scene);
 		primaryStage.show();
-		
 	}
 
 	public static void main(String[] args) {
