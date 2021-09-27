@@ -48,7 +48,7 @@
             <Font size="20.0" />
          </font>
       </Label>
-      <PieChart fx:id="pieChart" layoutX="536.0" layoutY="140.0" prefHeight="218.0" prefWidth="240.0" style="-fx-background-color: white;" />
+      <PieChart fx:id="pieChart" layoutX="536.0" layoutY="174.0" prefHeight="188.0" prefWidth="240.0" style="-fx-background-color: white;" />
       <Label fx:id="outline" layoutX="150.0" layoutY="128.0" prefHeight="24.0" prefWidth="136.0" textFill="#f7f5f5">
          <font>
             <Font size="20.0" />
