@@ -13,6 +13,7 @@ import javafx.fxml.FXMLLoader;
 import javafx.fxml.Initializable;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
+import javafx.scene.control.Alert;
 import javafx.scene.control.Button;
 import javafx.scene.control.ComboBox;
 import javafx.scene.control.DatePicker;
@@ -20,6 +21,7 @@ import javafx.scene.control.Label;
 import javafx.scene.control.ListView;
 import javafx.scene.control.TextArea;
 import javafx.scene.control.TextField;
+import javafx.scene.control.Alert.AlertType;
 import javafx.scene.image.Image;
 import javafx.scene.image.ImageView;
 import javafx.stage.Stage;
@@ -59,7 +61,9 @@ public class plusInfo_Controller implements Initializable{
 		 cmbTitle = (ComboBox<String>)root.lookup("#cmbTitle");
 		if(cmbTitle != null) {
 			cmbTitle.getItems().addAll("샹치", "인질", "포켓몬스터", "모가디슈", "건파우더 밀크쉐이크", "맨인 더 다크2");
+
 		}
+
 		
 	}
 	public void addComboTime() {
@@ -106,13 +110,17 @@ public class plusInfo_Controller implements Initializable{
 	}
 
 	public void InfoBtn() {
-		System.out.println(cmbTitle.getValue());
-		System.out.println(cmbTime.getValue());
-		System.out.println(cmbCount.getValue());
-		System.out.println(fxDate.getValue());
+
 		
-		
-		try {
+		if(cmbTitle.getValue() == null || cmbTime.getValue() == null || cmbCount.getValue() == null || fxDate.getValue()== null) {
+			
+			Alert alert = new Alert(AlertType.WARNING);
+			alert.setTitle("경고창");
+			alert.setHeaderText("경고!!");
+			alert.setContentText("다음으로 넘어가기 전에 모두 선택하세요!");
+			alert.showAndWait();
+		}else {
+			try {
 			Stage primaryStage = new Stage();
 			FXMLLoader loader = 
 					new FXMLLoader(getClass().getResource("/CheckPage/checkPage.fxml")); 
@@ -125,10 +133,19 @@ public class plusInfo_Controller implements Initializable{
 		} catch (Exception e) {
 			e.printStackTrace();
 		}
-		CommonService cs = new CommonServiceImpl();
-		cs.setRoot(root);
-		cs.windowClose();
+			Stage stage = (Stage)root.getScene().getWindow();
+			stage.close();
+		}
+		
+		System.out.println(cmbTitle.getValue());
+		System.out.println(cmbTime.getValue());
+		System.out.println(cmbCount.getValue());
+		System.out.println(fxDate.getValue());
+		
 	}
+	
+	
+	
 	public void preBtn() {
 		try {
 			Stage primaryStage = new Stage();
@@ -147,7 +164,6 @@ public class plusInfo_Controller implements Initializable{
 		stage.close();
 	}
 	
-
 
 	@Override
 	public void initialize(URL arg0, ResourceBundle arg1) {	

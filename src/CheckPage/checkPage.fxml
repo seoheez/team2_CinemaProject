@@ -90,5 +90,10 @@
          <font>
             <Font size="18.0" />
          </font></Label>
+      <Button fx:id="preBtn" layoutX="23.0" layoutY="24.0" mnemonicParsing="false" onAction="#preBtn" prefHeight="36.0" prefWidth="106.0" text="이전으로">
+         <font>
+            <Font size="19.0" />
+         </font>
+      </Button>
    </children>
 </AnchorPane>
