@@ -7,6 +7,7 @@ import java.util.ResourceBundle;
 import com.sun.prism.paint.Color;
 
 import CheckPage.check_Controller;
+import javafx.beans.value.ObservableValue;
 import javafx.collections.FXCollections;
 import javafx.collections.ObservableList;
 import javafx.event.ActionEvent;
@@ -52,7 +53,6 @@ public class plusInfo_Controller implements Initializable{
 		addComboCount();
 		fxListView = (ListView)root.lookup("#fxListView");
 		fxImageView = (ImageView)root.lookup("#fxImageView");
-		
 		fxDate=(DatePicker)root.lookup("#fxDate");
 		setListView();
 	}
@@ -84,6 +84,10 @@ public class plusInfo_Controller implements Initializable{
 			cmbCount.getItems().addAll("1", "2", "3", "4", "5");
 		}
 	}
+	public void setNum(ActionEvent e) {
+		System.out.println( ((ToggleButton)e.getSource()).getText() );
+		num = ((ToggleButton)e.getSource()).getText();
+	}
 
 
 	public void setListView() {
@@ -114,7 +118,7 @@ public class plusInfo_Controller implements Initializable{
 	public void InfoBtn() {
 
 		
-		if(cmbTitle.getValue() == null || cmbTime.getValue() == null || cmbCount.getValue() == null || fxDate.getValue()== null) {
+		if(cmbTitle.getValue() == null || cmbTime.getValue() == null || cmbCount.getValue() == null ||num == null) {
 			
 			Alert alert = new Alert(AlertType.WARNING);
 			alert.setTitle("경고창");
@@ -129,7 +133,7 @@ public class plusInfo_Controller implements Initializable{
 			Parent root = loader.load();
 			Scene scene = new Scene(root);
 			check_Controller ctl = loader.getController();
-			ctl.setRoot(root,cmbTitle.getValue(),cmbTime.getValue(),cmbCount.getValue(),fxDate.getValue().toString(),num);
+			ctl.setRoot(root,cmbTitle.getValue(),cmbTime.getValue(),cmbCount.getValue(),fxDate.getValue().toString(), num);
 			primaryStage.setScene(scene);
 			primaryStage.show();
 		} catch (Exception e) {
@@ -171,12 +175,15 @@ public class plusInfo_Controller implements Initializable{
 	public void initialize(URL arg0, ResourceBundle arg1) {	
 
 	}
+<<<<<<< HEAD
 
 	public void setNum(ActionEvent e) {
 		System.out.println( ((ToggleButton)e.getSource()).getText() );
 		num = ((ToggleButton)e.getSource()).getText();
 		
 	}
+=======
+>>>>>>> master
 }
 
 
