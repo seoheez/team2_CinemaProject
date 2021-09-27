@@ -92,13 +92,8 @@ public class plusInfo_Controller implements Initializable{
 		}
 	}
 	public void setNum(ActionEvent e) {
-<<<<<<< HEAD
-		System.out.println( ((ToggleButton)e.getSource()).getText());
-		num = ((ToggleButton)e.getSource()).getText() ;
-=======
 		System.out.println( ((ToggleButton)e.getSource()).getText() );
 		num = ((ToggleButton)e.getSource()).getText();	
->>>>>>> master
 	}
 	
 	public void setListView() {
