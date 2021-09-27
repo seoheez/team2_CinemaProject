@@ -12,7 +12,7 @@
 
 <AnchorPane prefHeight="571.0" prefWidth="762.0" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="CheckPage.check_Controller">
    <children>
-      <ImageView fitHeight="592.0" fitWidth="761.0" layoutX="1.0" pickOnBounds="true" preserveRatio="true">
+      <ImageView fitHeight="592.0" fitWidth="761.0" layoutX="1.0" layoutY="1.0" pickOnBounds="true" preserveRatio="true">
          <image>
             <Image url="@../img/pop.jpg" />
          </image>
@@ -35,31 +35,27 @@
          <font>
             <Font size="36.0" />
          </font></Label>
-      <Label layoutX="40.0" layoutY="320.0" prefHeight="50.0" prefWidth="98.0" text="인원" textFill="WHITE">
+      <Label layoutX="40.0" layoutY="312.0" prefHeight="50.0" prefWidth="98.0" text="상영관" textFill="WHITE">
          <font>
             <Font size="24.0" />
          </font>
       </Label>
-      <Label layoutX="40.0" layoutY="260.0" prefHeight="50.0" prefWidth="98.0" text="관람시간" textFill="WHITE">
+      <Label layoutX="40.0" layoutY="252.0" prefHeight="50.0" prefWidth="98.0" text="관람시간" textFill="WHITE">
          <font>
             <Font size="24.0" />
          </font>
       </Label>
-      <Label layoutX="40.0" layoutY="381.0" prefHeight="50.0" prefWidth="98.0" text="날짜" textFill="WHITE">
+      <Label layoutX="40.0" layoutY="196.0" prefHeight="50.0" prefWidth="98.0" text="날짜" textFill="WHITE">
          <font>
             <Font size="24.0" />
          </font>
       </Label>
-      <Label layoutX="40.0" layoutY="201.0" prefHeight="50.0" prefWidth="98.0" text="좌석" textFill="WHITE">
+      <Label layoutX="40.0" layoutY="369.0" prefHeight="50.0" prefWidth="98.0" text="좌석" textFill="WHITE">
          <font>
             <Font size="24.0" />
          </font>
       </Label>
       <Label layoutX="179.0" layoutY="153.0" prefHeight="29.0" prefWidth="150.0" style="-fx-background-color: #c7a4a4;" />
-      <Label layoutX="179.0" layoutY="211.0" prefHeight="29.0" prefWidth="150.0" style="-fx-background-color: gray;" />
-      <Label layoutX="179.0" layoutY="271.0" prefHeight="29.0" prefWidth="150.0" style="-fx-background-color: gray;" />
-      <Label layoutX="179.0" layoutY="330.0" prefHeight="29.0" prefWidth="150.0" style="-fx-background-color: gray;" />
-      <Label layoutX="179.0" layoutY="391.0" prefHeight="29.0" prefWidth="150.0" style="-fx-background-color: gray;" />
       <Button fx:id="pay" layoutX="16.0" layoutY="501.0" mnemonicParsing="false" onAction="#payBtn" prefHeight="56.0" prefWidth="146.0" style="-fx-background-color: #d72c2c;" text="결제하기" textFill="#000000e5">
          <font>
             <Font size="24.0" />
@@ -70,30 +66,33 @@
             <Font size="16.0" />
          </font>
       </Button>
-      <Label fx:id="fxTitle" layoutX="179.0" layoutY="152.0" prefHeight="29.0" prefWidth="150.0" style="-fx-background-color: #bdb7b7;">
+      <Label fx:id="fxTitle" layoutX="179.0" layoutY="152.0" prefHeight="30.0" prefWidth="228.0" style="-fx-background-color: #bdb7b7;" textAlignment="CENTER">
          <font>
             <Font size="22.0" />
          </font></Label>
-      <Label fx:id="fxDate" layoutX="179.0" layoutY="211.0" prefHeight="29.0" prefWidth="150.0" style="-fx-background-color: #bdb7b7;">
+      <Label fx:id="fxSNum" layoutX="179.0" layoutY="379.0" prefHeight="30.0" prefWidth="228.0" style="-fx-background-color: #bdb7b7;" text="     " textAlignment="CENTER">
          <font>
-            <Font size="18.0" />
-         </font></Label>
-      <Label fx:id="fxTime" layoutX="179.0" layoutY="271.0" prefHeight="29.0" prefWidth="150.0" style="-fx-background-color: #bdb7b7;">
-         <font>
-            <Font size="18.0" />
-         </font></Label>
-      <Label fx:id="fxPCount" layoutX="179.0" layoutY="330.0" prefHeight="29.0" prefWidth="150.0" style="-fx-background-color: #bdb7b7;">
-         <font>
-            <Font size="18.0" />
-         </font></Label>
-      <Label fx:id="fxSNum" layoutX="179.0" layoutY="391.0" prefHeight="29.0" prefWidth="150.0" style="-fx-background-color: #bdb7b7;">
-         <font>
-            <Font size="18.0" />
+            <Font size="21.0" />
          </font></Label>
       <Button fx:id="preBtn" layoutX="23.0" layoutY="24.0" mnemonicParsing="false" onAction="#preBtn" prefHeight="36.0" prefWidth="106.0" text="이전으로">
          <font>
             <Font size="19.0" />
          </font>
       </Button>
+      <Label fx:id="fxDate" layoutX="179.0" layoutY="206.0" prefHeight="30.0" prefWidth="228.0" style="-fx-background-color: #bdb7b7;" textAlignment="CENTER">
+         <font>
+            <Font size="22.0" />
+         </font>
+      </Label>
+      <Label fx:id="fxTime" layoutX="179.0" layoutY="262.0" prefHeight="30.0" prefWidth="228.0" style="-fx-background-color: #bdb7b7;" textAlignment="CENTER">
+         <font>
+            <Font size="22.0" />
+         </font>
+      </Label>
+      <Label fx:id="fxTheater" layoutX="179.0" layoutY="322.0" prefHeight="30.0" prefWidth="228.0" style="-fx-background-color: #bdb7b7;" textAlignment="CENTER">
+         <font>
+            <Font size="22.0" />
+         </font>
+      </Label>
    </children>
 </AnchorPane>
