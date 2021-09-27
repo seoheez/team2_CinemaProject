@@ -22,31 +22,31 @@
 		</ImageView>
 		<ListView fx:id="fxListView" layoutX="25.0" layoutY="70.0" prefHeight="194.0" prefWidth="214.0" style="-fx-background-color: transparent;" />
 		<ImageView fx:id="fxImageView" fitHeight="204.0" fitWidth="147.0" layoutX="271.0" layoutY="65.0" pickOnBounds="true" preserveRatio="true" />
-		<DatePicker fx:id="fxDate" layoutX="39.0" layoutY="322.0" />
-		<ComboBox fx:id="cmbTitle" layoutX="39.0" layoutY="389.0" prefHeight="14.0" prefWidth="187.0" />
-		<ComboBox fx:id="cmbTime" layoutX="39.0" layoutY="458.0" prefHeight="14.0" prefWidth="187.0" />
-		<ComboBox fx:id="cmbCount" layoutX="39.0" layoutY="526.0" prefHeight="14.0" prefWidth="187.0" />
+		<DatePicker fx:id="fxDate" layoutX="39.0" layoutY="393.0" />
+		<ComboBox fx:id="cmbTitle" layoutX="38.0" layoutY="317.0" prefHeight="14.0" prefWidth="187.0" />
+		<ComboBox fx:id="cmbTime" layoutX="39.0" layoutY="524.0" prefHeight="14.0" prefWidth="187.0" />
+		<ComboBox fx:id="cmbTheater" layoutX="38.0" layoutY="458.0" prefHeight="14.0" prefWidth="187.0" />
 		<Button fx:id="Info" layoutX="689.0" layoutY="500.0" mnemonicParsing="false" onAction="#InfoBtn" prefHeight="50.0" prefWidth="153.0" style="-fx-background-color: #d72c2c;" text="예매확인" textFill="#20201fbf">
 			<font>
 				<Font size="27.0" />
 			</font>
 		</Button>
-		<Label layoutX="41.0" layoutY="289.0" text="날짜" textFill="#faf7f7">
+		<Label layoutX="41.0" layoutY="360.0" text="날짜" textFill="#faf7f7">
 			<font>
 				<Font size="18.0" />
 			</font>
 		</Label>
-		<Label layoutX="40.0" layoutY="498.0" text="인원수" textFill="#faf7f7">
+		<Label layoutX="39.0" layoutY="430.0" text="상영관" textFill="#faf7f7">
 			<font>
 				<Font size="18.0" />
 			</font>
 		</Label>
-		<Label layoutX="41.0" layoutY="357.0" text="영화" textFill="#faf7f7">
+		<Label layoutX="40.0" layoutY="285.0" text="영화" textFill="#faf7f7">
 			<font>
 				<Font size="18.0" />
 			</font>
 		</Label>
-		<Label layoutX="41.0" layoutY="427.0" text="시간" textFill="#faf7f7">
+		<Label layoutX="41.0" layoutY="499.0" text="시간" textFill="#faf7f7">
 			<font>
 				<Font size="18.0" />
 			</font>
