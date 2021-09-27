@@ -31,7 +31,7 @@ public class check_Controller implements Initializable{
 		this.root = root;
 	}
 	Label fxTitle, fxTime, fxPCount, fxSNum, fxDate;
-	public void setRoot(Parent root,String title, String time, String count, String num,String date) {
+	public void setRoot(Parent root,String title, String time, String count, String date,String num) {
 		this.root = root;
 		fxTitle = (Label)root.lookup("#fxTitle");
 		fxTime = (Label)root.lookup("#fxTime");
@@ -41,8 +41,8 @@ public class check_Controller implements Initializable{
 		fxTitle.setText(title);
 		fxTime.setText(time);
 		fxPCount.setText(count);
-		fxSNum.setText(num);
-		fxDate.setText(date);
+		fxSNum.setText(date);
+		fxDate.setText(num);
 	}
 	@Override
 	public void initialize(URL arg0, ResourceBundle arg1) {
