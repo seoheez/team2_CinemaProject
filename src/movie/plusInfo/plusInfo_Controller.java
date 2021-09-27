@@ -4,6 +4,8 @@ import java.net.URL;
 import java.util.ArrayList;
 import java.util.ResourceBundle;
 
+import com.sun.prism.paint.Color;
+
 import CheckPage.check_Controller;
 import javafx.collections.FXCollections;
 import javafx.collections.ObservableList;
@@ -169,9 +171,11 @@ public class plusInfo_Controller implements Initializable{
 	public void initialize(URL arg0, ResourceBundle arg1) {	
 
 	}
+
 	public void setNum(ActionEvent e) {
 		System.out.println( ((ToggleButton)e.getSource()).getText() );
 		num = ((ToggleButton)e.getSource()).getText();
+		
 	}
 }
 
