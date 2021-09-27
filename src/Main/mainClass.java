@@ -17,9 +17,10 @@ public class mainClass extends Application {
 		Scene scene = new Scene(root);
 		Controller ctl = loader.getController();
 		ctl.setRoot(root);
-		
+		primaryStage.setTitle("Movie Reservation");
 		primaryStage.setScene(scene);
 		primaryStage.show();
+		primaryStage.setResizable(false);
 	}
 
 	public static void main(String[] args) {
