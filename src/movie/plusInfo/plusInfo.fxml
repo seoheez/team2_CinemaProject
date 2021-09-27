@@ -148,5 +148,6 @@
             </ToggleButton>
          </children>
       </HBox>
+      <Button fx:id="random" layoutX="441.0" layoutY="416.0" mnemonicParsing="false" onAction="#randomBtn" prefHeight="36.0" prefWidth="106.0" text="랜덤" />
 	</children>
 </AnchorPane>
