@@ -7,9 +7,6 @@ import java.util.ResourceBundle;
 import com.sun.prism.paint.Color;
 
 import CheckPage.check_Controller;
-import javafx.animation.KeyFrame;
-import javafx.animation.KeyValue;
-import javafx.animation.Timeline;
 import javafx.beans.value.ObservableValue;
 import javafx.collections.FXCollections;
 import javafx.collections.ObservableList;
@@ -31,9 +28,7 @@ import javafx.scene.control.ToggleButton;
 import javafx.scene.control.Alert.AlertType;
 import javafx.scene.image.Image;
 import javafx.scene.image.ImageView;
-import javafx.scene.layout.StackPane;
 import javafx.stage.Stage;
-import javafx.util.Duration;
 import sign.common.CommonService;
 import sign.common.CommonServiceImpl;
 
@@ -60,8 +55,6 @@ public class plusInfo_Controller implements Initializable{
 		fxImageView = (ImageView)root.lookup("#fxImageView");
 		fxDate=(DatePicker)root.lookup("#fxDate");
 		setListView();
-		
-		
 	}
 
 
@@ -69,7 +62,7 @@ public class plusInfo_Controller implements Initializable{
 		// TODO Auto-generated method stub
 		cmbTitle = (ComboBox<String>)root.lookup("#cmbTitle");
 		if(cmbTitle != null) {
-			cmbTitle.getItems().addAll(" 샹치", " 인질", " 포켓몬스터", " 모가디슈", " 건파우더 밀크쉐이크", " 맨인 더 다크2");
+			cmbTitle.getItems().addAll(" 샹치", " 인질", " 포켓몬스터", " 모가디슈", " 건파우더 밀크셰이크", " 맨인 더 다크2");
 
 		}
 
@@ -95,7 +88,8 @@ public class plusInfo_Controller implements Initializable{
 		System.out.println( ((ToggleButton)e.getSource()).getText() );
 		num = ((ToggleButton)e.getSource()).getText();	
 	}
-	
+
+
 	public void setListView() {
 		setList();
 		fxListView.getSelectionModel().selectedIndexProperty().addListener((observable, oldValue, newValue)->{

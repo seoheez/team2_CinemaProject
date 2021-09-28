@@ -11,16 +11,15 @@ public class mainClass extends Application {
 //	public static int s = 0;
 	@Override
 	public void start(Stage primaryStage) throws IOException {
-		primaryStage.setTitle("Movie Reservation");
 		FXMLLoader loader = 
 				new FXMLLoader(getClass().getResource("eventTest.fxml"));
 		Parent root = loader.load();
 		Scene scene = new Scene(root);
 		Controller ctl = loader.getController();
 		ctl.setRoot(root);
+		
 		primaryStage.setScene(scene);
 		primaryStage.show();
-		primaryStage.setResizable(false);
 	}
 
 	public static void main(String[] args) {
