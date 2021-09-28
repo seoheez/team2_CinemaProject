@@ -68,7 +68,9 @@ public class MemberServiceImpl implements MemberService{
 			Alert alert = new Alert(AlertType.INFORMATION);
 			alert.setContentText("동일한 아이디가 존재합니다");
 			alert.show();
-		}
+		}CommonService cs = new CommonServiceImpl();
+		cs.setRoot(root);
+		cs.windowClose();
 	}
 	@Override
 	public void setRoot(Parent root) {
