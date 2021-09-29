@@ -51,9 +51,6 @@ public class check_Controller implements Initializable{
 		alert.setContentText("결제가 완료되었습니다!\n즐거운 관람되세요~!!");
 		alert.show();
 		
-		Stage stage = (Stage)root.getScene().getWindow();
-		stage.close();
-		
 	}
 	public void endBtn() {
 		Boolean answer = checkConfirmBox.display("Title", "정말 종료하시겠습니까?");
