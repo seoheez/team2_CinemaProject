@@ -39,7 +39,6 @@ public class MovieInfoController implements Initializable{
 		btn.add("detail5");
 		
 		System.out.println(btn.indexOf(((Button)(view.getSource())).getId()));
-//		Zero(arr.get(btn.indexOf(((Button)(view.getSource())).getId())));
 		
 		
 		System.out.println(((Button)(view.getSource())).getId());
@@ -51,7 +50,6 @@ public class MovieInfoController implements Initializable{
 		outline.add("액션");
 		outline.add("범죄");
 		System.out.println(btn.indexOf(((Button)(view.getSource())).getId()));
-		//Zero(outline.get(btn.indexOf(((Button)(view.getSource())).getId())));
 		
 		System.out.println(((Button)(view.getSource())).getId());
 		ArrayList<String>  releaseD = new ArrayList<String>();
@@ -62,7 +60,6 @@ public class MovieInfoController implements Initializable{
 		releaseD.add("2021.09.08");
 		releaseD.add("2021.09.01");
 		System.out.println(btn.indexOf(((Button)(view.getSource())).getId()));
-		//Zero(outline.get(btn.indexOf(((Button)(view.getSource())).getId())));
 		
 		System.out.println(((Button)(view.getSource())).getId());
 		ArrayList<String> rTime = new ArrayList<String>();
@@ -80,7 +77,6 @@ public class MovieInfoController implements Initializable{
 		Zero(o);
 	}
 	public void Zero(String[] s){
-//		System.out.println("111"+s);
 		try {
 			Stage primaryStage = new Stage();
 			FXMLLoader loader = 
@@ -89,8 +85,7 @@ public class MovieInfoController implements Initializable{
 			Scene scene = new Scene(Root);
 			datail_Info_Controller0 ctl = loader.getController();
 			ctl.setRoot(Root,s);
-			//Stage stage = (Stage)root.getScene().getWindow();
-			//stage.close();
+			
 			primaryStage.setScene(scene);
 			primaryStage.show();
 			

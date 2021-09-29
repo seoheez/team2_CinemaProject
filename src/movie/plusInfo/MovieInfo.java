@@ -18,7 +18,6 @@ public class MovieInfo extends Application {
 		Scene scene = new Scene(root);
 		MovieInfoController ctl = loader.getController();
 		ctl.setRoot(root);
-		
 		primaryStage.setScene(scene);
 		primaryStage.show();
 	}
