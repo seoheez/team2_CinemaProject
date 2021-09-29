@@ -23,7 +23,6 @@ public class MemberServiceImpl implements MemberService{
 	DB db;
 
 	public void addComboBox() {
-		db = new DB();
 	}
 	
 	public void memberCancle() {
@@ -53,23 +52,31 @@ public class MemberServiceImpl implements MemberService{
 			return;
 		}
 		
+		db = new DB();
 		MemberDTO dto = new MemberDTO();
+		
 		dto.setName( name.getText() );
 		dto.setId( id.getText() );
 		dto.setPw( pwd.getText() );
 		
 		int result = db.insert(dto);
-		if(result == 1) {
+		
+		if(result == 1){
 			Alert alert = new Alert(AlertType.INFORMATION);
 			alert.setContentText("회원가입에 성공하셨습니다");
 			alert.show();
-			return;}
-		else {
+			
+			CommonService cs = new CommonServiceImpl();
+			cs.setRoot(root);
+			cs.windowClose();
+			
+		}else {
 			Alert alert = new Alert(AlertType.INFORMATION);
-			alert.setContentText("동일한 아이디가 존재합니다");
+			alert.setContentText("아이디가 중복입니다");
 			alert.show();
-		}
+			}
 	}
+			
 	@Override
 	public void setRoot(Parent root) {
 		this.root = root;

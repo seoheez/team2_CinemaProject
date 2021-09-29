@@ -34,6 +34,7 @@ public class Controller implements Initializable{
 	public void setRoot(Parent root) {
 		this.root = root;
 		ls.setRoot(root);
+		db = new DB();
 	}
 
 	public void btnOk() {
@@ -49,21 +50,20 @@ public class Controller implements Initializable{
 			alertMethod("비번은 필수 항목입니다");
 			return;
 		}
-		
-		db = new DB();
-		MemberDTO dto = db.loginCheck(id.getText() );
+		MemberDTO dto = new MemberDTO();
+		dto = db.loginCheck(id.getText() );
 		
 		if(dto == null) {
-			alertMethod("아이디가 존재하지 않습니다.");
+			alertMethod("해당 아이디는 존재하지 않습니다.");
 			return;
+		} else {
+			if( dto.getPw().equals(pwd.getText()) ) {
+				System.out.println("환영합니다~~ "+ dto.getName()+ "님");
+			}else {
+				alertMethod("비밀번번호가 다릅니다");
+				return;
 		}
-		
-		if(dto.getPw().equals(pwd.getText())) {
-			System.out.println("환영합니다.~~~ " + dto.getName());
-		}else {
-			alertMethod("아이디 혹은 비번이 다릅니다.");
-			return;
-		}
+	}
 		
 		//ls.loginCheck();
 		try {
