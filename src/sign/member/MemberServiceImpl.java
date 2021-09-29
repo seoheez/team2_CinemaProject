@@ -74,14 +74,10 @@ public class MemberServiceImpl implements MemberService{
 			Alert alert = new Alert(AlertType.INFORMATION);
 			alert.setContentText("아이디가 중복입니다");
 			alert.show();
-<<<<<<< HEAD
 		}CommonService cs = new CommonServiceImpl();
 		cs.setRoot(root);
 		cs.windowClose();
-=======
 			}
->>>>>>> master
-	}
 			
 	@Override
 	public void setRoot(Parent root) {
