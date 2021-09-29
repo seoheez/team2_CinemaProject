@@ -59,23 +59,17 @@ public class plusInfo_Controller implements Initializable{
 
 
 	public void addComboTitle() {
-		// TODO Auto-generated method stub
 		cmbTitle = (ComboBox<String>)root.lookup("#cmbTitle");
 		if(cmbTitle != null) {
 			cmbTitle.getItems().addAll(" 샹치", " 인질", " 포켓몬스터", " 모가디슈", " 건파우더 밀크셰이크", " 맨인 더 다크2");
-
 		}
-
-
 	}
+	
 	public void addComboTime() {
-		// TODO Auto-generated method stub
 		cmbTime = (ComboBox<String>)root.lookup("#cmbTime");
 		if(cmbTime != null) {
 			cmbTime.getItems().addAll(" AM 09:30", " AM 11:55", " PM 2:50", " PM 4:30", " PM 6:25");
 		}
-
-
 	}
 	public void addComboTheater() {
 		// TODO Auto-generated method stub
